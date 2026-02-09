@@ -14,7 +14,7 @@ export const metadata = {
   keywords: ["neighbor", "community", "connection", "social", "neighborhood"],
   authors: [{ name: "Neighbor Connector" }],
   icons: {
-    icon: "/image/logo.png",
+    icon: ["/images/logo.png"],
   },
   openGraph: {
     title: "Neighbor Connector",
