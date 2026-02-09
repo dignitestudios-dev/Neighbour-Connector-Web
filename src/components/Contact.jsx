@@ -45,7 +45,7 @@ const TextArea = ({
       onChange={onChange}
       placeholder={placeholder}
       required={required}
-      className="min-h-[120px] p-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black focus:outline-none"
+      className="min-h-30 p-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black focus:outline-none"
     />
   </label>
 );
@@ -188,150 +188,152 @@ const Contact = () => {
   }
 
   return (
-    <section className="relative w-full py-24" id="contact">
+    <section className="relative w-full py-12 md:py-24" id="contact">
       {/* soft green glow */}
       <div className="absolute left-0 top-12 w-80 h-80 rounded-full bg-[#88CE00]/20 blur-3xl -z-10" />
 
       <SuccessModal isOpen={showModal} onClose={() => setShowModal(false)} />
 
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-2 gap-12 items-start">
-        {/* Left content */}
-        <div className="space-y-6">
-          <h2 className="text-5xl font-extrabold text-secondary">
-            Let’s Connect and Create Together!
-          </h2>
-          <h3 className="text-2xl font-semibold text-primary">
-            Start Building Your Community Today
-          </h3>
+      <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
+          {/* Left content */}
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-secondary">
+              Let's Connect and Create Together!
+            </h2>
+            <h3 className="text-lg md:text-3xl font-semibold text-primary">
+              Start Building Your Community Today
+            </h3>
 
-          <div className="text-lg text-black/60 space-y-4">
-            <p>
-              You can also join multiple “micro-circles” with friends, family,
-              and coworkers. People from all backgrounds—like police chiefs,
-              housing managers, city leaders, pastors, teachers and city
-              planners—see the value in connecting with like-minded neighbors.
-              When people reach out with kindness, good things happen.
-            </p>
+            <div className="text-black/50 space-y-3 md:space-y-4">
+              <p className="text-sm md:text-lg">
+                You can also join multiple "micro-circles" with friends, family,
+                and coworkers. People from all backgrounds—like police chiefs,
+                housing managers, city leaders, pastors, teachers and city
+                planners—see the value in connecting with like-minded neighbors.
+                When people reach out with kindness, good things happen.
+              </p>
 
-            <p>
-              Anyone can feel lonely or isolated, especially as we age. With the
-              NeighborConnector™ App, your circle of maybe 2–10 nearby
-              households can bring friendship, well-being and a sense of
-              community when you need it most.
-            </p>
+              <p className="text-sm md:text-lg">
+                Anyone can feel lonely or isolated, especially as we age. With
+                the NeighborConnector™ App, your circle of maybe 2–10 nearby
+                households can bring friendship, well-being and a sense of
+                community when you need it most.
+              </p>
 
-            <h4 className="text-lg font-bold text-secondary mt-4">
-              Sponsorships and Donations:
-            </h4>
-            <p className="text-black/60">
-              Visit the Community Care Housing website to donate or sponsor the
-              NeighborConnector™ App or help develop more housing in planned
-              communities for shared housing and senior housing.
-            </p>
+              <h4 className="text-base md:text-lg font-bold text-secondary mt-4">
+                Sponsorships and Donations:
+              </h4>
+              <p className="text-sm md:text-base text-black/60">
+                Visit the Community Care Housing website to donate or sponsor
+                the NeighborConnector™ App or help develop more housing in
+                planned communities for shared housing and senior housing.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Right - Form panel */}
-        <div className="relative">
-          <div className="bg-[#EAF8D6] border border-[#E6F3C9] rounded-lg p-8">
-            <h4 className="text-2xl font-extrabold text-secondary mb-4">
-              Closer Than a Click
-            </h4>
+          {/* Right - Form panel */}
+          <div className="relative">
+            <div className="bg-[#EAF8D6] border border-[#E6F3C9] rounded-lg p-6 md:p-8">
+              <h4 className="text-xl md:text-2xl font-extrabold text-secondary mb-4">
+                Closer Than a Click
+              </h4>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                  <Input
+                    label="First Name"
+                    name="firstName"
+                    value={form.firstName}
+                    onChange={handleChange}
+                    placeholder="First Name"
+                    required
+                  />
+                  <Input
+                    label="Last Name"
+                    name="lastName"
+                    value={form.lastName}
+                    onChange={handleChange}
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+
                 <Input
-                  label="First Name"
-                  name="firstName"
-                  value={form.firstName}
+                  label="Email"
+                  name="email"
+                  type="email"
+                  value={form.email}
                   onChange={handleChange}
-                  placeholder="First Name"
+                  placeholder="Email Address"
                   required
                 />
-                <Input
-                  label="Last Name"
-                  name="lastName"
-                  value={form.lastName}
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                  <Input
+                    label="Phone Number"
+                    name="phone"
+                    value={form.phone}
+                    onChange={handleChange}
+                    placeholder="Phone Number"
+                  />
+                  <label className="flex flex-col">
+                    <span className="text-xs md:text-sm text-secondary mb-2">
+                      Location <span className="text-red-500">*</span>
+                    </span>
+                    <select
+                      name="location"
+                      value={form.location}
+                      onChange={handleChange}
+                      required
+                      className="h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] text-black focus:outline-none"
+                    >
+                      <option value="">Select State</option>
+                      {usStates.map((state) => (
+                        <option key={state} value={state}>
+                          {state}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                </div>
+
+                <TextArea
+                  label="Message"
+                  name="message"
+                  value={form.message}
                   onChange={handleChange}
-                  placeholder="Last Name"
+                  placeholder="Message"
                   required
                 />
-              </div>
 
-              <Input
-                label="Email"
-                name="email"
-                type="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Email Address"
-                required
-              />
-
-              <div className="grid grid-cols-2 gap-4">
-                <Input
-                  label="Phone Number"
-                  name="phone"
-                  value={form.phone}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                />
-                <label className="flex flex-col">
-                  <span className="text-sm text-secondary mb-2">
-                    Location <span className="text-red-500">*</span>
-                  </span>
-                  <select
-                    name="location"
-                    value={form.location}
+                <div className="flex items-center gap-3">
+                  <input
+                    id="consent"
+                    name="consent"
+                    type="checkbox"
+                    checked={form.consent}
                     onChange={handleChange}
                     required
-                    className="h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] text-black focus:outline-none"
+                    className="w-5 h-5 rounded-sm border bg-[#F0F1EC] cursor-pointer"
+                  />
+                  <label
+                    htmlFor="consent"
+                    className="text-xs md:text-sm text-black/60 cursor-pointer"
                   >
-                    <option value="">Select State</option>
-                    {usStates.map((state) => (
-                      <option key={state} value={state}>
-                        {state}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              </div>
+                    You agree to our privacy policy.{" "}
+                    <span className="text-red-500">*</span>
+                  </label>
+                </div>
 
-              <TextArea
-                label="Message"
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Message"
-                required
-              />
-
-              <div className="flex items-center gap-3">
-                <input
-                  id="consent"
-                  name="consent"
-                  type="checkbox"
-                  checked={form.consent}
-                  onChange={handleChange}
-                  required
-                  className="w-5 h-5 rounded-sm border bg-[#F0F1EC] cursor-pointer"
-                />
-                <label
-                  htmlFor="consent"
-                  className="text-sm text-black/60 cursor-pointer"
+                <button
+                  type="submit"
+                  className="w-full py-3 md:py-4 bg-[#619908] text-white rounded-md font-medium hover:opacity-90 transition"
                 >
-                  You agree to our privacy policy.{" "}
-                  <span className="text-red-500">*</span>
-                </label>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-4 bg-[#619908] text-white rounded-md font-medium hover:opacity-90 transition"
-              >
-                Submit
-              </button>
-            </form>
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

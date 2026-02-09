@@ -13,6 +13,9 @@ export const metadata = {
   description: "Where Caring Neighbors Make Stronger Communities.",
   keywords: ["neighbor", "community", "connection", "social", "neighborhood"],
   authors: [{ name: "Neighbor Connector" }],
+  icons: {
+    icon: "/image/logo.png",
+  },
   openGraph: {
     title: "Neighbor Connector",
     description: "Connect with your community and neighbors",
@@ -33,7 +36,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
-        <main className="max-w-360 mx-auto px-8">{children}</main>
+        <main className="max-w-360 mx-auto px-4 md:px-8">{children}</main>
         <Footer />
       </body>
     </html>

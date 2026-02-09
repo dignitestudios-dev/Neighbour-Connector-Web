@@ -4,38 +4,25 @@ import Apple from "./icons/Apple";
 
 const GetStarted = () => {
   return (
-    <section className="px-14 py-0 bg-black rounded-xl flex items-center justify-between bg-[url(/images/contact-bg.png)] bg-cover bg-center">
+    <section className="px-6 md:px-14 py-12 md:py-16 bg-black rounded-xl flex flex-col lg:flex-row items-center justify-between gap-8 bg-[url(/images/contact-bg.png)] bg-cover bg-center">
       <div className="space-y-4">
-        <h2 className="text-white text-5xl font-medium capitalize">
+        <h2 className="text-white text-3xl md:text-5xl font-medium capitalize">
           Ready to get started?
         </h2>
 
-        <p className="capitalize text-white text-lg">
+        <p className="capitalize text-white text-sm md:text-lg">
           Download the NeighborConnector™ app and start your Circle Living
           today!!
         </p>
 
         <div>
-          <div className=" text-black bg-white rounded-lg flex gap-2 items-center px-4 py-3 w-max cursor-pointer">
+          <div className=" text-black bg-white rounded-lg flex gap-2 items-center px-4 py-3 w-max cursor-pointer text-sm md:text-base">
             Download App <Apple />
           </div>
-          {/* <Image
-            src={"/images/apple.png"}
-            alt="Apple Store"
-            width={150}
-            height={150}
-          />
-
-          <Image
-            src={"/images/google.png"}
-            alt="Google Play Store"
-            width={150}
-            height={150}
-          /> */}
         </div>
       </div>
 
-      <div className="relative w-130 h-140">
+      <div className="relative w-32 h-40 md:w-130 md:h-140 shrink-0">
         <Image
           src="/images/contact.png"
           alt="Get Started NeighborConnector"
