@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full bg-white"
+      className="max-w-360 mx-auto px-8 sticky top-0 z-50 w-full bg-white border-b-2 border-gray-100"
       aria-label="Main navigation"
     >
       <div className="flex items-center justify-between py-3">

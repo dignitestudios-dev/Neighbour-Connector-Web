@@ -1,4 +1,4 @@
-import {  Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 
@@ -30,11 +30,9 @@ export default function RootLayout({ children }) {
         />
         <meta name="theme-color" content="#07519B" />
       </head>
-      <body
-        className={`${inter.variable} antialiased max-w-360 mx-auto px-8 `}
-      >
+      <body className={`${inter.variable} antialiased`}>
         <Navbar />
-        <main>{children}</main>
+        <main className="max-w-360 mx-auto px-8">{children}</main>
       </body>
     </html>
   );
