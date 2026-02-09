@@ -10,7 +10,8 @@
   }
 
   body {
-    @apply font-sans antialiased;
+    @apply antialiased;
+    font-family: var(--font-inter);
     color: var(--color-secondary-gray);
   }
 }
@@ -51,4 +52,27 @@
   .bg-secondary {
     @apply bg-[#525252];
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
+p,
+a,
+li {
+  font-size: 16px;
 }

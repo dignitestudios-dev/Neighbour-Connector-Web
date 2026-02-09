@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="flex-shrink-0"
+          className="shrink-0"
           aria-label="Neighbor Connector home"
         >
           <Image

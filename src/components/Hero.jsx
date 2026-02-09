@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute top-20 right-20 w-12 h-12 transform rotate-45">
         <Star />
       </div>
-      <div className="absolute bottom-32 left-20 w-12 h-12 transform rotate-45">
+      <div className="absolute bottom-32 left-[50%] w-12 h-12 transform rotate-45">
         <Star />
       </div>
 
