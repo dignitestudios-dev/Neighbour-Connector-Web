@@ -16,8 +16,12 @@ const GetStarted = () => {
         </p>
 
         <div>
-          <div className=" text-black bg-white rounded-lg flex gap-2 items-center px-4 py-3 w-max cursor-pointer text-sm md:text-base">
+          {/* <div className=" text-black bg-white rounded-lg flex gap-2 items-center px-4 py-3 w-max cursor-pointer text-sm md:text-base">
             Download App <Apple />
+          </div> */}
+
+          <div className=" text-black bg-white rounded-lg flex gap-2 items-center px-4 py-3 w-max cursor-pointer text-sm md:text-base">
+            Coming Soon
           </div>
         </div>
       </div>
