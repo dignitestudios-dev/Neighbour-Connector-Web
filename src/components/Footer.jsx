@@ -116,12 +116,18 @@ const Footer = () => {
               </h4>
               <ul className="space-y-3 text-xs md:text-sm text-black/50">
                 <li>
-                  <Link href="#" className="hover:underline hover:text-success">
+                  <Link
+                    href="/terms-and-conditions"
+                    className="hover:underline hover:text-success"
+                  >
                     Terms and Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:underline hover:text-success">
+                  <Link
+                    href="/privacy-policy"
+                    className="hover:underline hover:text-success"
+                  >
                     Privacy Policies
                   </Link>
                 </li>

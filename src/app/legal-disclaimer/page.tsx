@@ -2,136 +2,78 @@ import React from "react";
 
 const LegalDisclaimer = () => {
   return (
-    <div className="min-h-screen bg-white py-16">
-      <div className="mx-auto px-8">
-        {/* Main Title */}
-        <h1 className="text-3xl! font-bold text-black mb-12">
-          NeighborConnector™ Legal Disclaimer
-        </h1>
+    <div className="mx-auto px-4 py-12 text-gray-800">
+      <h1 className="text-3xl font-bold mb-2">LEGAL DISCLAIMER — NeighborConnector™</h1>
+      <p className="text-sm text-gray-600 mb-8">Effective Date: January 1, 2025</p>
 
-        {/* Last Updated Section */}
-        <div className="mb-12 space-y-5">
-          <h2 className="text-lg! font-bold text-black">
-            Last updated: <span className="font-normal">[12 Nov 2025]</span>
-          </h2>
-          <p className="text-lg! leading-9 text-black">
-            NeighborConnector™ is a volunteer-powered mobile app that helps
-            small circles of neighbors connect, share light assistance, and
-            reduce isolation. The app is designed to encourage friendship,
-            well-being, and a sense of community—not to replace professional or
-            emergency services.
-          </p>
-        </div>
+      <p className="mb-6">
+        NeighborConnector™ (the "App") is operated by Community Care Housing ("Community Care Housing," "CCH," "we," "us," or "our"), a United States–based 501(c)(3) nonprofit organization headquartered in Colorado.
+      </p>
 
-        {/* Section 1 */}
-        <div className="mb-12 space-y-5">
-          <h3 className="text-3xl! font-bold text-black">
-            1. Community Connection, Not Professional Care
-          </h3>
-          <p className="text-lg! leading-9 text-black">
-            NeighborConnector™ is a communication and coordination tool only. It
-            does not provide medical, psychological, emergency, or professional
-            caregiving services. Any information shared through the app is for
-            general support and companionship, not professional advice. If you
-            have a medical or safety emergency, please call 911 or your local
-            emergency number immediately.
-          </p>
-        </div>
+      <p className="mb-8 font-semibold">
+        By using the App, you acknowledge and agree to the terms of this Legal Disclaimer.
+      </p>
 
-        {/* Section 2 */}
-        <div className="mb-12 space-y-5">
-          <h3 className="text-3xl! font-bold text-black">
-            2. Volunteer Participation
-          </h3>
-          <p className="text-lg! leading-9 text-black">
-            All users participate as private individuals and neighbors—not as
-            employees, agents, or representatives of NeighborConnector™ or its
-            creators. Each user is responsible for their own behavior, safety,
-            and communications, whether online or in person. NeighborConnector™
-            is not responsible for any loss, injury, or harm that may result
-            from user interactions or volunteer activities.
-          </p>
-        </div>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">1. No Emergency or Professional Services</h2>
+      <ul className="list-disc list-inside mb-6 space-y-3">
+        <li>NeighborConnector™ is a community communication and coordination tool intended to support neighbor connections and safety awareness.</li>
+        <li>The App does not provide emergency services, medical care, mental health services, legal advice, or professional counseling of any kind.</li>
+        <li>If you are experiencing an emergency or require immediate assistance, contact local emergency services (such as 911) immediately.</li>
+      </ul>
 
-        {/* Section 3 */}
-        <div className="mb-12 space-y-5">
-          <h3 className="text-3xl! font-bold text-black">
-            3. Use at Your Own Risk
-          </h3>
-          <p className="text-lg! leading-9 text-black">
-            While we strive to create a trustworthy environment through
-            real-name and address verification, NeighborConnector™ cannot
-            guarantee the actions, reliability, or character of any user. Use of
-            the app, including any in-person meet-ups or exchanges, is entirely
-            at your own risk. We encourage all users to use good judgment, meet
-            in safe public places when appropriate, and respect personal
-            boundaries.
-          </p>
-        </div>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">2. Informational Use Only</h2>
+      <ul className="list-disc list-inside mb-6 space-y-3">
+        <li>Any information shared through the App — including messages, posts, schedules, check-ins, or user-generated content — is provided for general informational and community-support purposes only.</li>
+        <li>Community Care Housing does not verify, endorse, or guarantee the accuracy, completeness, or reliability of any user-generated content.</li>
+      </ul>
 
-        {/* Section 4 */}
-        <div className="mb-12 space-y-5">
-          <h3 className="text-3xl! font-bold text-black">4. No Liability</h3>
-          <p className="text-lg! leading-9 text-black">
-            NeighborConnector™ and its developers, volunteers, and affiliates
-            are not liable for any damages, losses, injuries, or
-            misunderstandings that arise from using the app, connecting with
-            others, or relying on shared information. This includes direct,
-            indirect, incidental, or consequential damages of any kind.
-          </p>
-        </div>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">3. No Duty to Monitor or Intervene</h2>
+      <ul className="list-disc list-inside mb-6 space-y-3">
+        <li>Community Care Housing does not monitor all user activity and does not assume any obligation to review, supervise, or intervene in communications or interactions between users.</li>
+        <li>Users are solely responsible for their own conduct and decisions.</li>
+      </ul>
 
-        {/* Section 5 */}
-        <div className="mb-12 space-y-5">
-          <h3 className="text-3xl! font-bold text-black">
-            5. Information Accuracy and Availability
-          </h3>
-          <p className="text-lg! leading-9 text-black">
-            We do our best to keep NeighborConnector™ accurate, safe, and
-            available. However, we do not guarantee that the app will always be
-            uninterrupted, error-free, or free from inaccuracies. Content posted
-            by users represents their own views and experiences, not those of
-            NeighborConnector™.
-          </p>
-        </div>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">4. Voluntary Participation</h2>
+      <ul className="list-disc list-inside mb-6 space-y-3">
+        <li>Participation in NeighborConnector™ is voluntary. Users assume all risks associated with using the App, including reliance on information provided by other users.</li>
+        <li>Community Care Housing is not responsible for outcomes resulting from missed check-ins, delayed communications, or user inaction.</li>
+      </ul>
 
-        {/* Section 6 */}
-        <div className="mb-12 space-y-5">
-          <h3 className="text-3xl! font-bold text-black">
-            6. Privacy and Respect
-          </h3>
-          <p className="text-lg! leading-9 text-black">
-            Users are expected to protect their own personal information and
-            respect the privacy of others. Do not share sensitive health,
-            financial, or identifying details unless you choose to do so
-            knowingly. NeighborConnector™ follows its posted Privacy Policy to
-            protect user data to the best of our ability.
-          </p>
-        </div>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">5. No Guarantees</h2>
+      <ul className="list-disc list-inside mb-6 space-y-3">
+        <li>While we strive to maintain reliable and secure systems, we do not guarantee that the App will be uninterrupted, error-free, timely, or free from technical issues.</li>
+        <li>Features such as notifications, messaging, or safety check-ins may be delayed or unavailable due to factors outside our control.</li>
+      </ul>
 
-        {/* Section 7 */}
-        <div className="mb-12 space-y-5">
-          <h3 className="text-3xl! font-bold text-black">
-            7. Changes and Updates
-          </h3>
-          <p className="text-lg! leading-9 text-black">
-            NeighborConnector™ may update its features, terms, and policies at
-            any time to improve safety or comply with laws. Continued use of the
-            app means you agree to the current version of this disclaimer.
-          </p>
-        </div>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">6. Limitation of Liability</h2>
+      <p className="mb-3">To the fullest extent permitted by law, Community Care Housing shall not be liable for any damages — direct or indirect — arising from:</p>
+      <ul className="list-disc list-inside mb-6 space-y-3">
+        <li>Use or inability to use the App</li>
+        <li>User-generated content</li>
+        <li>Reliance on information shared through the App</li>
+        <li>Technical failures or service interruptions</li>
+      </ul>
+      <p className="mb-6">This includes, without limitation, personal injury, emotional distress, or loss of data.</p>
 
-        {/* Our Commitment */}
-        <div className="space-y-5">
-          <h3 className="text-3xl! font-bold text-black">Our Commitment</h3>
-          <p className="text-lg! leading-9 text-black">
-            NeighborConnector™ exists to make communities stronger, friendlier,
-            and more connected. We are proud to support caring neighbors—but
-            remember: connection is powerful when paired with common sense and
-            personal responsibility.
-          </p>
-        </div>
-      </div>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">7. Third-Party Services</h2>
+      <p className="mb-6">The App may rely on third-party service providers (such as hosting, messaging, or authentication services). Community Care Housing is not responsible for the actions, availability, or performance of third-party services.</p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">8. Governing Law</h2>
+      <p className="mb-6">This Legal Disclaimer is governed by the laws of the State of Colorado, without regard to conflict-of-law principles.</p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">9. Changes to This Disclaimer</h2>
+      <p className="mb-6">We may update this Legal Disclaimer from time to time. Changes will be posted within the App or on our website, and the effective date will be updated accordingly.</p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">10. Contact Information</h2>
+      <p className="mb-2">For questions regarding this Legal Disclaimer, please contact:</p>
+      <p className="mb-6">
+        <a href="mailto:info@communitycarehousing.org" className="text-blue-600 hover:underline">info@communitycarehousing.org</a>
+      </p>
+      <p className="text-gray-700">
+        Community Care Housing<br />
+        Colorado, United States<br />
+        501(c)(3) nonprofit organization
+      </p>
     </div>
   );
 };
