@@ -55,12 +55,39 @@ const SuccessModal = ({
 const Footer = () => {
   const [newsletterEmail, setNewsletterEmail] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleNewsletterSubmit(e) {
+  async function handleNewsletterSubmit(e) {
     e.preventDefault();
-    console.log("Newsletter signup:", newsletterEmail);
-    setShowModal(true);
-    setNewsletterEmail("");
+    setError("");
+    setIsLoading(true);
+
+    try {
+      const response = await fetch(
+        "https://api.dev.neighborconnector.org/news-letter",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: newsletterEmail }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to subscribe to newsletter");
+      }
+
+      console.log("Newsletter signup:", newsletterEmail);
+      setShowModal(true);
+      setNewsletterEmail("");
+    } catch (err) {
+      setError(err.message || "An error occurred. Please try again.");
+      console.error("Newsletter subscription error:", err);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -116,18 +143,12 @@ const Footer = () => {
               </h4>
               <ul className="space-y-3 text-xs md:text-sm text-black/50">
                 <li>
-                  <Link
-                    href="/terms-and-conditions"
-                    className="hover:underline hover:text-success"
-                  >
+                  <Link href="#" className="hover:underline hover:text-success">
                     Terms and Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/privacy-policy"
-                    className="hover:underline hover:text-success"
-                  >
+                  <Link href="#" className="hover:underline hover:text-success">
                     Privacy Policies
                   </Link>
                 </li>
@@ -181,19 +202,26 @@ const Footer = () => {
             </p>
 
             <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+              {error && (
+                <div className="p-3 bg-red-100 border border-red-300 rounded text-red-700 text-sm">
+                  {error}
+                </div>
+              )}
               <input
                 type="email"
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder="Email Address"
                 required
-                className="w-full h-12 md:h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black text-sm md:text-base focus:outline-none"
+                disabled={isLoading}
+                className="w-full h-12 md:h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black text-sm md:text-base focus:outline-none disabled:opacity-50"
               />
               <button
                 type="submit"
-                className="w-full py-3 md:py-4 bg-success text-white rounded-lg font-medium hover:opacity-90"
+                disabled={isLoading}
+                className="w-full py-3 md:py-4 bg-success text-white rounded-lg font-medium hover:opacity-90 disabled:opacity-50 transition"
               >
-                Submit
+                {isLoading ? "Submitting..." : "Submit"}
               </button>
             </form>
           </div>

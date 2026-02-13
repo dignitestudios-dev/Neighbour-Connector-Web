@@ -10,6 +10,9 @@ const Input = ({
   onChange,
   placeholder,
   required = false,
+  disabled = false,
+  pattern,
+  errorMessage,
 }) => (
   <label className="flex flex-col">
     <span className="text-sm text-secondary mb-2">
@@ -22,8 +25,13 @@ const Input = ({
       onChange={onChange}
       placeholder={placeholder}
       required={required}
-      className="h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black focus:outline-none"
+      disabled={disabled}
+      pattern={pattern}
+      className="h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black focus:outline-none disabled:opacity-50"
     />
+    {errorMessage && (
+      <span className="text-xs text-red-500 mt-1">{errorMessage}</span>
+    )}
   </label>
 );
 
@@ -34,6 +42,7 @@ const TextArea = ({
   onChange,
   placeholder,
   required = false,
+  disabled = false,
 }) => (
   <label className="flex flex-col">
     <span className="text-sm text-secondary mb-2">
@@ -45,7 +54,8 @@ const TextArea = ({
       onChange={onChange}
       placeholder={placeholder}
       required={required}
-      className="min-h-30 p-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black focus:outline-none"
+      disabled={disabled}
+      className="min-h-30 p-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] placeholder:text-secondary text-black focus:outline-none disabled:opacity-50"
     />
   </label>
 );
@@ -107,6 +117,9 @@ const Contact = () => {
     consent: false,
   });
   const [showModal, setShowModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
 
   const usStates = [
     "Alabama",
@@ -164,27 +177,74 @@ const Contact = () => {
   function handleChange(e) {
     const { name, value, type, checked } = e.target;
     setForm((s) => ({ ...s, [name]: type === "checkbox" ? checked : value }));
+
+    // Validate phone number
+    if (name === "phone") {
+      if (value && !new RegExp(/^\+?[0-9]{7,15}$/).test(value)) {
+        setPhoneError("Invalid phone number. Use format: +1234567890 or 1234567890 (7-15 digits)");
+      } else {
+        setPhoneError("");
+      }
+    }
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
+    
+    // Validate phone number if provided
+    if (form.phone && !new RegExp(/^\+?[0-9]{7,15}$/).test(form.phone)) {
+      setError("Please enter a valid phone number");
+      return;
+    }
 
-    // Log form data
-    console.log("Contact form submitted", form);
+    setError("");
+    setIsLoading(true);
 
-    // Show success modal
-    setShowModal(true);
+    try {
+      const response = await fetch(
+        "https://api.dev.neighborconnector.org/news-letter/contact-us",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: `${form.firstName} ${form.lastName}`,
+            email: form.email,
+            subject: "Contact Form Inquiry",
+            message: form.message,
+            location: form.location,
+            phoneNumber: form.phone,
+          }),
+        }
+      );
 
-    // Reset form
-    setForm({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      location: "",
-      message: "",
-      consent: false,
-    });
+      if (!response.ok) {
+        throw new Error("Failed to submit contact form");
+      }
+
+      // Log form data
+      console.log("Contact form submitted", form);
+
+      // Show success modal
+      setShowModal(true);
+
+      // Reset form
+      setForm({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        location: "",
+        message: "",
+        consent: false,
+      });
+    } catch (err) {
+      setError(err.message || "An error occurred. Please try again.");
+      console.error("Contact form submission error:", err);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -240,6 +300,11 @@ const Contact = () => {
               </h4>
 
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                {error && (
+                  <div className="p-3 bg-red-100 border border-red-300 rounded text-red-700 text-sm">
+                    {error}
+                  </div>
+                )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                   <Input
                     label="First Name"
@@ -248,6 +313,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="First Name"
                     required
+                    disabled={isLoading}
                   />
                   <Input
                     label="Last Name"
@@ -256,6 +322,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Last Name"
                     required
+                    disabled={isLoading}
                   />
                 </div>
 
@@ -267,15 +334,20 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Email Address"
                   required
+                  disabled={isLoading}
                 />
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                   <Input
                     label="Phone Number"
                     name="phone"
+                    type="tel"
                     value={form.phone}
                     onChange={handleChange}
                     placeholder="Phone Number"
+                    pattern="^\+?[0-9]{7,15}$"
+                    errorMessage={phoneError}
+                    disabled={isLoading}
                   />
                   <label className="flex flex-col">
                     <span className="text-xs md:text-sm text-secondary mb-2">
@@ -286,7 +358,8 @@ const Contact = () => {
                       value={form.location}
                       onChange={handleChange}
                       required
-                      className="h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] text-black focus:outline-none"
+                      disabled={isLoading}
+                      className="h-14 px-3 rounded-lg bg-[#F4F5FC] border border-[#88CE00] text-black focus:outline-none disabled:opacity-50"
                     >
                       <option value="">Select State</option>
                       {usStates.map((state) => (
@@ -305,6 +378,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Message"
                   required
+                  disabled={isLoading}
                 />
 
                 <div className="flex items-center gap-3">
@@ -315,7 +389,8 @@ const Contact = () => {
                     checked={form.consent}
                     onChange={handleChange}
                     required
-                    className="w-5 h-5 rounded-sm border bg-[#F0F1EC] cursor-pointer"
+                    disabled={isLoading}
+                    className="w-5 h-5 rounded-sm border bg-[#F0F1EC] cursor-pointer disabled:opacity-50"
                   />
                   <label
                     htmlFor="consent"
@@ -328,9 +403,10 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-3 md:py-4 bg-[#619908] text-white rounded-md font-medium hover:opacity-90 transition"
+                  disabled={isLoading}
+                  className="w-full py-3 md:py-4 bg-[#619908] text-white rounded-md font-medium hover:opacity-90 disabled:opacity-50 transition"
                 >
-                  Submit
+                  {isLoading ? "Submitting..." : "Submit"}
                 </button>
               </form>
             </div>
