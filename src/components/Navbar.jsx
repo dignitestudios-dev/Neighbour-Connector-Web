@@ -87,7 +87,7 @@ const Navbar = () => {
         const l = navLinks[i];
         const id = l.href.split("#")[1];
         const el = document.getElementById(id);
-        
+
         if (el) {
           const rect = el.getBoundingClientRect();
           const top = rect.top + window.scrollY;

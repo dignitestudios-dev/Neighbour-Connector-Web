@@ -18,7 +18,6 @@ const LandingPage = () => {
       <FAQ />
       <Contact />
       <GetStarted />
-      <Footer />
     </>
   );
 };
