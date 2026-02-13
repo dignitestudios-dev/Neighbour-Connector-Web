@@ -10,6 +10,7 @@ const Navbar = () => {
     { href: "/#features", label: "Features" },
     { href: "/#how-it-works", label: "How it Works" },
     { href: "/#about", label: "About us" },
+    { href: "/#faq", label: "FAQ" },
     { href: "/#contact", label: "Contact Us" },
   ];
 
@@ -80,18 +81,25 @@ const Navbar = () => {
     const onScroll = () => {
       const viewportTop = window.scrollY + window.innerHeight / 3;
       let found = false;
-      for (const l of navLinks.slice(1)) {
+      
+      // Start from the end and work backwards to find the most relevant section
+      for (let i = navLinks.length - 1; i >= 1; i--) {
+        const l = navLinks[i];
         const id = l.href.split("#")[1];
         const el = document.getElementById(id);
+        
         if (el) {
           const rect = el.getBoundingClientRect();
           const top = rect.top + window.scrollY;
+          
           if (viewportTop >= top) {
             setActive(l.href);
             found = true;
+            break; // Stop after finding the deepest section
           }
         }
       }
+      
       if (!found && window.scrollY < 200) setActive("/");
     };
 
