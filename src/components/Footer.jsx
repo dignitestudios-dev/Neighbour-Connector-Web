@@ -72,7 +72,7 @@ const Footer = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ email: newsletterEmail }),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -143,18 +143,24 @@ const Footer = () => {
               </h4>
               <ul className="space-y-3 text-xs md:text-sm text-black/50">
                 <li>
-                  <Link href="#" className="hover:underline hover:text-success">
+                  <Link
+                    href="/app/terms-and-conditions"
+                    className="hover:underline hover:text-success"
+                  >
                     Terms and Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:underline hover:text-success">
+                  <Link
+                    href="/app/privacy-policy"
+                    className="hover:underline hover:text-success"
+                  >
                     Privacy Policies
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/legal-disclaimer"
+                    href="/app/legal-disclaimer"
                     className="hover:underline hover:text-success"
                   >
                     Legal disclaimer
