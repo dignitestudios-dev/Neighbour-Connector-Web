@@ -144,7 +144,7 @@ const Footer = () => {
               <ul className="space-y-3 text-xs md:text-sm text-black/50">
                 <li>
                   <Link
-                    href="/app/terms-and-conditions"
+                    href="/terms-and-conditions"
                     className="hover:underline hover:text-success"
                   >
                     Terms and Conditions
@@ -152,7 +152,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/app/privacy-policy"
+                    href="/privacy-policy"
                     className="hover:underline hover:text-success"
                   >
                     Privacy Policies
@@ -160,7 +160,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/app/legal-disclaimer"
+                    href="/legal-disclaimer"
                     className="hover:underline hover:text-success"
                   >
                     Legal disclaimer
@@ -242,16 +242,16 @@ const Footer = () => {
             Copyright © 2024 Neighbor Connector. All rights reserved.
           </p>
           <div className="text-xs md:text-sm text-secondary space-x-2 md:space-x-4 flex flex-wrap">
-            <a href="#" className="hover:text-primary">
+            <a href="/terms-and-conditions" className="hover:text-primary">
               Terms & Conditions
             </a>
             <span>/</span>
-            <a href="#" className="hover:text-primary">
+            <a href="/privacy-policy" className="hover:text-primary">
               Privacy Policy
             </a>
             <span>/</span>
-            <a href="#" className="hover:text-primary">
-              Cookie Policy
+            <a href="/legal-disclaimer" className="hover:text-primary">
+              Legal Disclaimer
             </a>
           </div>
         </div>
