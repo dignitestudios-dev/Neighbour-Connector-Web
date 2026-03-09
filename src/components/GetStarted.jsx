@@ -10,7 +10,7 @@ const GetStarted = () => {
           Ready to get started?
         </h2>
 
-        <p className="capitalize text-white text-sm md:text-lg">
+        <p className="text-white text-sm md:text-lg">
           Download the NeighborConnector™ app and start your Circle Living
           today!!
         </p>

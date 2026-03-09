@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Holly from "./icons/Holly";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -158,9 +159,23 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed max-w-2xl mx-auto">
-            Find answers to common questions about NeighborConnector™ and how to
+            Holy can help you find answers to some common questions about NeighborConnector™ and how to
             get started building your circle today.
           </p>
+
+          <div className="max-w-2xl mx-auto mt-8 p-5 md:p-7 text-left rounded-lg border border-[#88CE00]/30 bg-linear-to-r from-[#07519B]/5 to-[#619908]/5">
+            <div className="flex items-center gap-4 mb-4">
+              <Holly />
+              <h4 className="text-base md:text-xl font-bold text-primary">
+                Ask Holly
+              </h4>
+            </div>
+            <p className="text-sm md:text-lg font-medium capitalize text-black/50 leading-7">
+              Holly is your personal assistant. She can answer your questions
+              about the app as you learn to use it. She understands that not
+              everyone is comfortable with technology.
+            </p>
+          </div>
         </div>
 
         {/* FAQ Categories */}

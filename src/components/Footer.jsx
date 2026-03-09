@@ -111,30 +111,30 @@ const Footer = () => {
           className="w-40 md:w-60 mb-8 md:mb-12"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
-          {/* Left Column - Links */}
-          <div className="flex-1 space-y-6">
-            <div>
-              <h3 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
-                Links
-              </h3>
-              <p className="text-xs md:text-sm text-black/50 mb-4">
-                (Stats You Shared) – Remember Anything That Has Dated Statistics
-                Must Be Periodically Updated For Optimal SEO/GEO-Search Engine
-                Optimization And Generative Engine Optimization For Ranking And
-                Visibility.
-              </p>
-              <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
-                <li>Stats You Shared Remember Anything</li>
-                <li>SEO Updates Status</li>
-                <li>External Research Link</li>
-              </ul>
-            </div>
-            <button className="w-full py-3 md:py-4 bg-success text-white rounded-lg font-medium hover:opacity-90">
-              Join the Community
-            </button>
-          </div>
+          {/* Left column - Links */}
+                <div className="flex-1 space-y-6">
+                <div>
+                  <h3 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
+                  Links
+                  </h3>
+                  <p className="text-xs md:text-sm text-black/50 mb-4">
+                  (Stats you shared) - Remember anything that has dated statistics
+                  must be periodically updated for optimal SEO/GEO-search engine
+                  optimization and generative engine optimization for ranking and
+                  visibility.
+                  </p>
+                  <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
+                  <li>Stats you shared remember anything</li>
+                  <li>SEO updates status</li>
+                  <li>External research link</li>
+                  </ul>
+                </div>
+                <button className="w-full py-3 md:py-4 bg-success text-white rounded-lg font-medium hover:opacity-90">
+                  Join the Community
+                </button>
+                </div>
 
-          {/* Middle Column - Legal & Product */}
+                {/* Middle column - Legal & Product */}
           <div className="flex-1 space-y-6">
             {/* Legal */}
             <div>

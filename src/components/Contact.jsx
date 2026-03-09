@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Input = ({
@@ -181,7 +182,9 @@ const Contact = () => {
     // Validate phone number
     if (name === "phone") {
       if (value && !new RegExp(/^\+?[0-9]{7,15}$/).test(value)) {
-        setPhoneError("Invalid phone number. Use format: +1234567890 or 1234567890 (7-15 digits)");
+        setPhoneError(
+          "Invalid phone number. Use format: +1234567890 or 1234567890 (7-15 digits)",
+        );
       } else {
         setPhoneError("");
       }
@@ -190,7 +193,7 @@ const Contact = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    
+
     // Validate phone number if provided
     if (form.phone && !new RegExp(/^\+?[0-9]{7,15}$/).test(form.phone)) {
       setError("Please enter a valid phone number");
@@ -216,7 +219,7 @@ const Contact = () => {
             location: form.location,
             phoneNumber: form.phone,
           }),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -267,11 +270,12 @@ const Contact = () => {
 
             <div className="text-black/50 space-y-3 md:space-y-4">
               <p className="text-sm md:text-lg">
-                You can also join multiple "micro-circles" with friends, family,
+                Join or create multiple "micro-circles" with friends, family,
                 and coworkers. People from all backgrounds—like police chiefs,
                 housing managers, city leaders, pastors, teachers and city
-                planners—see the value in connecting with like-minded neighbors.
-                When people reach out with kindness, good things happen.
+                planners—see the value in connecting with like-minded neighbors
+                and friends. When people reach out with kindness, good things
+                happen.
               </p>
 
               <p className="text-sm md:text-lg">
@@ -287,7 +291,11 @@ const Contact = () => {
               <p className="text-sm md:text-base text-black/60">
                 Visit the Community Care Housing website to donate or sponsor
                 the NeighborConnector™ App or help develop more housing in
-                planned communities for shared housing and senior housing.
+                planned communities for shared housing and senior housing. QR
+                Code for Donation and link to{" "}
+                <Link href={"https://www.communitycarehousing.org"} target="_blank" rel="noopener noreferrer">
+                  www.communitycarehousing.org
+                </Link>
               </p>
             </div>
           </div>

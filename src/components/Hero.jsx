@@ -53,18 +53,18 @@ const Hero = () => {
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed mt-6">
               The NeighborConnector™ app helps community members create personal
               profiles and invite others into their trusted micro-circles.
-              Residents can connect securely with friends and family to share
-              support and companionship.
+              Residents can connect securely to share
+              support and companionship. You can also connect with close friends and family outside your neighborhood
             </p>
 
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed">
               Unlike other community platforms designed for hundreds of homes or
               HOA communities, NeighborConnector™ focuses on relationships among
-              a select few people you've met and want to build trust with.
+              a select few people you've met and want to build trust with
             </p>
 
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed">
-              Your closest neighbors join by invitation only, eliminating noise
+              Create a circle or have your closest neighbors join by invitation only, eliminating noise
               from people outside your private circle for a more intimate
               experience. We call this "Circle Living."
             </p>

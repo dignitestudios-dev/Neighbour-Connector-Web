@@ -27,7 +27,9 @@ const Features = () => {
 
           {/* Right - Content */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-black text-secondary mb-6">Features</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-secondary mb-6">
+              Features
+            </h2>
 
             <div className="space-y-8">
               <div>
@@ -37,10 +39,10 @@ const Features = () => {
                     Optional Safety Check-Ins
                   </h4>
                 </div>
-                <p className="text-sm md:text-lg font-medium capitalize text-black/50 leading-7">
-                  This optional feature lets your neighbors know how you''re doing
-                  by checking in and marking yourself "Safe" each day. Use 911 in
-                  a real emergency.
+                <p className="text-sm md:text-lg font-medium text-black/50 leading-7">
+                  This optional feature lets your circle members know how you're
+                  doing by checking in and marking yourself "Safe" each day. Use
+                  911 in a real emergency.
                 </p>
               </div>
 
@@ -51,12 +53,12 @@ const Features = () => {
                     Community Circles
                   </h4>
                 </div>
-                <p className="text-sm md:text-lg font-medium capitalize text-black/50 leading-7">
+                <p className="text-sm md:text-lg font-medium text-black/50 leading-7">
                   You can create or join verified neighbor groups, called
-                  "micro-circles," to share updates, ask for help or plan events.
-                  Whether you want to chat, schedule walks, need help with chores,
-                  rides, errands or want to plan a get-together, your circle is
-                  there for you.
+                  "micro-circles," to share updates, ask for help or plan
+                  events. Whether you want to chat, schedule walks, need help
+                  with chores, rides, errands or want to plan a get-together,
+                  your circle is there for you.
                 </p>
               </div>
 
@@ -67,25 +69,11 @@ const Features = () => {
                     Group Chat & Media Sharing
                   </h4>
                 </div>
-                <p className="text-sm md:text-lg font-medium capitalize text-black/50 leading-7">
+                <p className="text-sm md:text-lg font-medium text-black/50 leading-7">
                   Stay in touch with your local circle by sending messages and
                   sharing images or photos in a secure, private chat. Over time,
-                  you can turn strangers into acquaintances and then into friends,
-                  building a strong support system.
-                </p>
-              </div>
-
-              <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <Holly />
-                  <h4 className="text-base md:text-xl font-bold text-primary">
-                    Ask Holly
-                  </h4>
-                </div>
-                <p className="text-sm md:text-lg font-medium capitalize text-black/50 leading-7">
-                  Holly is your personal assistant. She can answer your questions
-                  about the app as you learn to use it. She understands that not
-                  everyone is comfortable with technology.
+                  you can turn strangers into acquaintances and then into
+                  friends, building a strong support system.
                 </p>
               </div>
             </div>
