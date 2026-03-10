@@ -64,7 +64,7 @@ const Hero = () => {
             </p>
 
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed">
-              Create a circle or have your closest neighbors join by invitation only, eliminating noise
+              Create a circle or have your closest neighbors, friends and family join by invitation only, eliminating noise
               from people outside your private circle for a more intimate
               experience. We call this "Circle Living."
             </p>
