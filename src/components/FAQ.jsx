@@ -13,22 +13,22 @@ const FAQ = () => {
         {
           question: "What is NeighborConnector™?",
           answer:
-            "Hi there! I'm Holly. NeighborConnector™ helps you build a small, trusted circle of neighbors, friends or family — usually 2 to 10 people — so you can stay connected, offer help and share companionship. It's your private, friendly community right where you live. You can also connect with close friends and family outside your neighborhood.",
+            "Holly: Hi there! I'm Holly. NeighborConnector™ helps you build a small, trusted circle of neighbors, friends or family — usually 2 to 10 people — so you can stay connected, offer help and share companionship. It's your private, friendly community right where you live. You can also connect with close friends and family outside your neighborhood.",
         },
         {
           question: "How do I create my profile?",
           answer:
-            "Easy! Just download the app, add your name, a photo if you like, and a few details about yourself. You can also include up to 2 emergency contacts — that's totally optional. You're always in control of what you share.",
+            "Holly: Easy! Just download the app, add your name, a photo, and a few details about yourself. You can also include up to 3 emergency contacts — that's totally optional. You're always in control of what you share.",
         },
         {
           question: "How do I create or join a group?",
           answer:
-            'Tap "Create Group" to start your own circle and invite trusted neighbors or friends. Or choose "Join Group" if someone sent you an invite. Once approved, you\'ll be part of your own little community — private and secure!',
+            'Holly: Tap "Create Group" to start your own circle and invite trusted neighbors or friends. Or choose "Join Group" if someone sent you an invite code. Once approved, you\'ll be part of your own little community — private and secure!',
         },
         {
           question: "Is the app free?",
           answer:
-            "Yep, 100% free! NeighborConnector™ is powered by volunteers and supported by Community Care Housing, a nonprofit that helps build connected communities.",
+            "Holly: Yep, 100% free! NeighborConnector™ is powered by volunteers and supported by Community Care Housing, a nonprofit that helps build connected communities.",
         },
       ],
     },
@@ -38,22 +38,22 @@ const FAQ = () => {
         {
           question: "Who can see my information?",
           answer:
-            "Only people in your circle can see what you share. Circles are invite-only, so no strangers or random neighbors can peek in.",
+            "Holly: Only people in your circle can see what you share. Circles are invite-only, so no strangers or random neighbors can peek in.",
         },
         {
           question: "Do I have to share my address or phone number?",
           answer:
-            "Nope! Share only what feels comfortable. Some people like adding contact info so others can reach them easily, but it's 100% your choice.",
+            "Holly: Nope! Share only what feels comfortable. Some people like adding contact info so others can reach them easily, but it's 100% your choice.",
         },
         {
           question: "How is my information protected?",
           answer:
-            "All chats and check-ins are secure and encrypted. Your data isn't sold or shared — ever. Your privacy matters here.",
+            "Holly: All chats and check-ins are secure and encrypted. Your data isn't sold or shared — ever. Your privacy matters here.",
         },
         {
           question: "What if someone makes me uncomfortable?",
           answer:
-            "You can block or report anyone right from the app. I'll walk you through it if you ever need help — you're always in control.",
+            "Holly: You can report anyone right from the app. I'll walk you through it if you ever need help — you're always in control.",
         },
       ],
     },
@@ -63,22 +63,22 @@ const FAQ = () => {
         {
           question: "How do I message my circle?",
           answer:
-            "Either with group chat or create or respond to a post for occasional help, appointments or rideshares, home help or help plan events, gatherings or activities. Just type your message or add a photo. It's as easy as texting a friend — but your chat or post stays private within your circle.",
+            "Holly: Either with group chat or create or respond to a post for occasional help, appointments or rideshares, home help or help plan events, gatherings or activities. Just type your message or add a photo. It's as easy as texting a friend — but your chat or post stays private within your circle.",
         },
         {
-          question: "What are \"Safety Check-Ins\"?",
+          question: "What are \"Optional Safety Check-Ins\"?",
           answer:
-            "Safety Check-Ins let you mark yourself \"Safe\" daily so neighbors know you're okay. It's great for peace of mind — especially for older adults or folks living alone. But remember, call 911 for real emergencies!",
+            "Holly: Safety Check-Ins (optional) let you mark yourself \"Safe\" daily so neighbors know you're okay. It's great for peace of mind — especially for older adults or folks living alone. But remember, call 911 for real emergencies!",
         },
         {
           question: "Can I join more than one circle?",
           answer:
-            "Absolutely! You might have one for your street, one for family and one for friends. You can switch between them anytime.",
+            "Holly: Absolutely! You might have one for your street, one for family and one for friends. You can switch between them anytime.",
         },
         {
           question: "Can we plan events in the app?",
           answer:
-            "Yes! Use your circle to plan coffee dates, dinners or neighborhood walks. It's all about making connection easy and fun.",
+            "Holly: Yes! Use your circle to plan coffee dates, dinners or neighborhood walks. It's all about making connection easy and fun.",
         },
       ],
     },
@@ -88,17 +88,17 @@ const FAQ = () => {
         {
           question: "What kinds of help can neighbors offer?",
           answer:
-            "So many things! Checking mail, watering plants, giving rides, picking up groceries or just sharing a friendly hello. It's amazing what small acts can do.",
+            "Holly: So many things! Checking mail, watering plants, giving rides, picking up groceries or just sharing a friendly hello. It's amazing what small acts can do.",
         },
         {
           question: "What if I don't know many neighbors yet?",
           answer:
-            "That's okay! Start small — invite one or two people you trust. Great communities begin with just a couple of caring folks.",
+            "Holly: That's okay! Start small — invite one or two people you trust. Great communities begin with just a couple of caring folks.",
         },
         {
           question: "I'm not very tech-savvy. Can you help me learn?",
           answer:
-            "Of course! That's what I'm here for. Ask me anything — like how to send a message, add a photo or check in. I'll guide you step by step.",
+            "Holly: Of course! That's what I'm here for. Ask me anything — like how to send a message, add a photo or check in. I'll guide you step by step.",
         },
       ],
     },
@@ -108,22 +108,22 @@ const FAQ = () => {
         {
           question: "Who created NeighborConnector™?",
           answer:
-            "We're part of Community Care Housing — a nonprofit that helps people build stronger, friendlier communities.",
+            "Holly: We're part of Community Care Housing — a nonprofit that helps people build stronger, friendlier communities.",
         },
         {
           question: "Why was NeighborConnector™ created?",
           answer:
-            "Because loneliness is tough — and community makes it better. Or maybe you need a small favor from someone nearby. This app helps you connect naturally with people who care.",
+            "Holly: Because loneliness is tough — and community makes it better. Or maybe you need a small favor from someone nearby. This app helps you connect naturally with people who care.",
         },
         {
           question: "How is this different from apps like Nextdoor or Facebook?",
           answer:
-            "Great question! NeighborConnector™ keeps things small and personal — no public feeds, no noise and no ads. Just real connection.",
+            "Holly: Great question! NeighborConnector™ keeps things small and personal — no public feeds, no noise and no ads. Just real connection.",
         },
         {
           question: "Can I use it if I live in an apartment or senior community?",
           answer:
-            "Definitely! Circles work anywhere — from apartments to senior living or single-family homes. If you've got neighbors, friends or family, you can connect.",
+            "Holly: Definitely! Circles work anywhere — from apartments to senior living or single-family homes. If you've got neighbors, friends or family, you can connect.",
         },
       ],
     },
@@ -133,12 +133,12 @@ const FAQ = () => {
         {
           question: "How do I reach support if I get stuck?",
           answer:
-            "You can message me here for help or email Info@CommunityCareHousing.org. If it's urgent, call 720-260-2600 (M). Someone from our team will gladly assist.",
+            "Holly: You can message me here for help or email Info@CommunityCareHousing.org. If it's urgent, call 720-260-2600 (M). Someone from our team will gladly assist.",
         },
         {
           question: "Can I donate or sponsor the app?",
           answer:
-            "Yes, thank you for asking! Donations help us address a range of needs, including expanding our app's reach and supporting shared housing and residents in need. Visit the website Community Care Housing.org or email Info@CommunityCareHousing.org to learn more.",
+            "Holly: Yes, thank you for asking! Donations help us address a range of needs, including expanding our app's reach and supporting shared housing and residents in need. Visit the website Community Care Housing.org or email Info@CommunityCareHousing.org to learn more.",
         },
       ],
     },

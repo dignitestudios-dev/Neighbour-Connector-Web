@@ -293,9 +293,10 @@ const Contact = () => {
                 the NeighborConnector™ App or help develop more housing in
                 planned communities for shared housing and senior housing. QR
                 Code for Donation and link to{" "}
-                <Link href={"https://www.communitycarehousing.org"} target="_blank" rel="noopener noreferrer">
+                <Link href={"https://www.communitycarehousing.org"} target="_blank" rel="noopener noreferrer" className="underline">
                   www.communitycarehousing.org
                 </Link>
+                .
               </p>
             </div>
           </div>
