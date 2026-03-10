@@ -49,7 +49,7 @@ const HowItWorks = () => {
                 <p className="text-base md:text-lg font-medium text-black/50 mt-2">
                   Once you have your circle, start individual conversations by
                   checking in with your people, posting your thoughts and ideas
-                  or asking for support. Respond to others'' posts and stay in
+                  or asking for support. Respond to others' posts and stay in
                   touch. If you want to have other discussions, start a group
                   chat!
                 </p>

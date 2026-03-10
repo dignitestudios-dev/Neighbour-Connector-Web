@@ -38,7 +38,7 @@ const AboutUs = () => {
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
               Current community apps and volunteer platforms emphasize large,
               broadcast-style communication on social feeds that offer resources
-              and tools, but they don''t support small-scale community building,
+              and tools, but they don't support small-scale community building,
               trust or companionship the way NeighborConnector™ does. In an age
               of technology, neighbors, friends and family remain disconnected
               and unaware of potential support systems. Loneliness and isolation
