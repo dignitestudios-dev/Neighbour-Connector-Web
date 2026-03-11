@@ -76,6 +76,19 @@ const Features = () => {
                   friends, building a strong support system.
                 </p>
               </div>
+              <div>
+                <div className="flex items-center gap-4 mb-4">
+                  <Holly />
+                  <h4 className="text-base md:text-xl font-bold text-primary">
+                    Ask Holly
+                  </h4>
+                </div>
+                <p className="text-sm md:text-lg font-medium capitalize text-black/50 leading-7">
+                  Holly is your personal assistant. She can answer your questions
+              about the app as you learn to use it. She understands that not
+              everyone is comfortable with technology.
+                </p>
+              </div>
             </div>
           </div>
         </div>
