@@ -48,7 +48,7 @@ const AboutUs = () => {
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
               The NeighborConnector™ App helps people connect naturally and
-              thrive in their communities. You are going to Love Circle Living!
+              thrive in their communities. You are going to love "Circle Living"!
             </p>
           </div>
         </div>

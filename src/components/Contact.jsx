@@ -270,8 +270,8 @@ const Contact = () => {
 
             <div className="text-black/50 space-y-3 md:space-y-4">
               <p className="text-sm md:text-lg">
-                Join or create multiple "micro-circles" with friends, family,
-                and coworkers. People from all backgrounds—like police chiefs,
+                Join or create multiple "micro-circles" with friends, family and
+                coworkers. People from all backgrounds—like police chiefs,
                 housing managers, city leaders, pastors, teachers and city
                 planners—see the value in connecting with like-minded neighbors
                 and friends. When people reach out with kindness, good things
@@ -292,8 +292,13 @@ const Contact = () => {
                 Visit the Community Care Housing website to donate or sponsor
                 the NeighborConnector™ App or help develop more housing in
                 planned communities for shared housing and senior housing. QR
-                Code for Donation and link to{" "}
-                <Link href={"https://www.communitycarehousing.org"} target="_blank" rel="noopener noreferrer" className="underline">
+                Code for Donations and link to{" "}
+                <Link
+                  href={"https://www.communitycarehousing.org"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
                   www.communitycarehousing.org
                 </Link>
                 .
