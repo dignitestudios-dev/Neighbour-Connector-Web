@@ -262,7 +262,7 @@ const Contact = () => {
           {/* Left content */}
           <div className="space-y-4 md:space-y-6">
             <h2 className="text-3xl md:text-5xl font-extrabold text-secondary">
-              Let's Connect and Create Together!
+              Let's Create, Connect and Build Together!
             </h2>
             <h3 className="text-lg md:text-3xl font-semibold text-primary">
               Start Building Your Community Today
@@ -271,18 +271,17 @@ const Contact = () => {
             <div className="text-black/50 space-y-3 md:space-y-4">
               <p className="text-sm md:text-lg">
                 Join or create multiple "micro-circles" with friends, family and
-                coworkers. People from all backgrounds—like police chiefs,
-                housing managers, city leaders, pastors, teachers and city
-                planners—see the value in connecting with like-minded neighbors
-                and friends. When people reach out with kindness, good things
-                happen.
+                coworkers. Anyone can feel lonely or isolated, especially as we
+                age. With the NeighborConnector™ App, your circles of maybe 2–10
+                members can bring friendship, well-being and a sense of
+                community when you need it most.
               </p>
 
               <p className="text-sm md:text-lg">
-                Anyone can feel lonely or isolated, especially as we age. With
-                the NeighborConnector™ App, your circle of maybe 2–10 nearby
-                households can bring friendship, well-being and a sense of
-                community when you need it most.
+                People from all backgrounds—like police chiefs, housing
+                managers, city leaders, pastors, teachers and city planners—see
+                the value in connecting with like-minded neighbors and friends.
+                When people reach out with kindness, good things happen.
               </p>
 
               <h4 className="text-base md:text-lg font-bold text-secondary mt-4">

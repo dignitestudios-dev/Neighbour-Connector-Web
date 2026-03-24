@@ -11,7 +11,7 @@ const Navbar = () => {
     { href: "/#how-it-works", label: "How it Works" },
     { href: "/#about", label: "About us" },
     { href: "/#faq", label: "FAQ" },
-    { href: "/#contact", label: "Contact Us" },
+    { href: "/#contact", label: "Connect" },
   ];
 
   const [active, setActive] = useState("/");

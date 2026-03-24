@@ -18,7 +18,7 @@ const FAQ = () => {
         {
           question: "How do I create my profile?",
           answer:
-          "Holly: Easy! Just download the app, add your name, a photo and a few details about yourself. You can also include up to 3 emergency contacts — that's totally optional. You're always in control of what you share.",
+            "Holly: Easy! Just download the app, add your name, a photo and a few details about yourself. You can also include up to 3 emergency contacts — that's totally optional. You're always in control of what you share.",
         },
         {
           question: "How do I create or join a group?",
@@ -66,7 +66,7 @@ const FAQ = () => {
             "Holly: Either with group chat or create or respond to a post for occasional help, appointments or rideshares, home help or help plan events, gatherings or activities. Just type your message or add a photo. It's as easy as texting a friend — but your chat or post stays private within your circle.",
         },
         {
-          question: "What are \"Optional Safety Check-Ins\"?",
+          question: 'What are "Optional Safety Check-Ins"?',
           answer:
             "Holly: Safety Check-Ins (optional) let you mark yourself \"Safe\" daily so neighbors know you're okay. It's great for peace of mind — especially for older adults or folks living alone. But remember, call 911 for real emergencies!",
         },
@@ -116,12 +116,14 @@ const FAQ = () => {
             "Holly: Because loneliness is tough — and community makes it better. Or maybe you need a small favor from someone nearby. This app helps you connect naturally with people who care.",
         },
         {
-          question: "How is this different from apps like Nextdoor or Facebook?",
+          question:
+            "How is this different from apps like Nextdoor or Facebook?",
           answer:
             "Holly: Great question! NeighborConnector™ keeps things small and personal — no public feeds, no noise and no ads. Just real connection.",
         },
         {
-          question: "Can I use it if I live in an apartment or senior community?",
+          question:
+            "Can I use it if I live in an apartment or senior community?",
           answer:
             "Holly: Definitely! Circles work anywhere — from apartments to senior living or single-family homes. If you've got neighbors, friends or family, you can connect.",
         },
@@ -133,7 +135,7 @@ const FAQ = () => {
         {
           question: "How do I reach support if I get stuck?",
           answer:
-            "Holly: You can message me here for help or email Info@CommunityCareHousing.org. If it's urgent, call 720-260-2600 (M). Someone from our team will gladly assist.",
+            "Holly: You can message me here for help or email Info@CommunityCareHousing.org. If it's urgent, call 720 693 2522. Someone from our team will gladly assist.",
         },
         {
           question: "Can I donate or sponsor the app?",
@@ -159,8 +161,9 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed max-w-2xl mx-auto">
-            Holly can help you find answers to some common questions about NeighborConnector™ and how to
-            get started building your circle today.
+            Holly can help you find answers to some common questions about
+            NeighborConnector™ and how to get started building your circle
+            today.
           </p>
 
           {/* <div className="max-w-2xl mx-auto mt-8 p-5 md:p-7 text-left rounded-lg border border-[#88CE00]/30 bg-linear-to-r from-[#07519B]/5 to-[#619908]/5">
@@ -250,15 +253,29 @@ const FAQ = () => {
         {/* Support Contact */}
         <div className="mt-10 md:mt-12 p-6 md:p-8 bg-linear-to-r from-[#07519B]/5 to-[#619908]/5 rounded-lg border border-[#88CE00]/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <p className="text-base md:text-lg font-bold text-secondary mb-1">Need immediate help?</p>
-            <p className="text-sm md:text-base font-medium text-black/50">Call or text our support line — we're happy to assist.</p>
+            <p className="text-base md:text-lg font-bold text-secondary mb-1">
+              Need immediate help?
+            </p>
+            <p className="text-sm md:text-base font-medium text-black/50">
+              Call or text our support line — we're happy to assist.
+            </p>
           </div>
           <a
             href="tel:7206932522"
             className="inline-flex items-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-primary text-white font-bold rounded-lg hover:bg-[#054073] transition-colors duration-300 shrink-0"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
             </svg>
             720-693-2522
           </a>

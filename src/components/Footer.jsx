@@ -112,29 +112,26 @@ const Footer = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
           {/* Left column - Links */}
-                <div className="flex-1 space-y-6">
-                <div>
-                  <h3 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
-                  Links
-                  </h3>
-                  <p className="text-xs md:text-sm text-black/50 mb-4">
-                  (Stats you shared) - Remember anything that has dated statistics
-                  must be periodically updated for optimal SEO/GEO-search engine
-                  optimization and generative engine optimization for ranking and
-                  visibility.
-                  </p>
-                  <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
-                  <li>Stats you shared remember anything</li>
-                  <li>SEO updates status</li>
-                  <li>External research link</li>
-                  </ul>
-                </div>
-                <button className="w-full py-3 md:py-4 bg-success text-white rounded-lg font-medium hover:opacity-90">
-                  Join the Community
-                </button>
-                </div>
+          <div className="flex-1 space-y-6">
+            <div>
+              <h3 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
+                Links
+              </h3>
+              <p className="text-xs md:text-sm text-black/50 mb-4">
+                (Stats you shared) - Remember anything that has dated statistics
+                must be periodically updated for optimal SEO/GEO-search engine
+                optimization and generative engine optimization for ranking and
+                visibility.
+              </p>
+              <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
+                <li>Stats you shared remember anything</li>
+                <li>SEO updates status</li>
+                <li>External research link</li>
+              </ul>
+            </div>
+          </div>
 
-                {/* Middle column - Legal & Product */}
+          {/* Middle column - Legal & Product */}
           <div className="flex-1 space-y-6">
             {/* Legal */}
             <div>
@@ -155,7 +152,7 @@ const Footer = () => {
                     href="/privacy-policy"
                     className="hover:underline hover:text-success"
                   >
-                    Privacy Policies
+                    Privacy Policy
                   </Link>
                 </li>
                 <li>
@@ -185,11 +182,6 @@ const Footer = () => {
                     Web Application for Admins
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    Commercial Model
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
@@ -207,7 +199,7 @@ const Footer = () => {
               Neighbor Connector And Other App Features, Etc.
             </p>
 
-            <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+            {/* <form onSubmit={handleNewsletterSubmit} className="space-y-4">
               {error && (
                 <div className="p-3 bg-red-100 border border-red-300 rounded text-red-700 text-sm">
                   {error}
@@ -229,7 +221,7 @@ const Footer = () => {
               >
                 {isLoading ? "Submitting..." : "Submit"}
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
 
@@ -239,7 +231,7 @@ const Footer = () => {
         {/* Bottom footer */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-xs md:text-sm text-secondary">
-            Copyright © 2024 Neighbor Connector. All rights reserved.
+            Copyright © {new Date().getFullYear()} Neighbor Connector<sup>™</sup>. All rights reserved.
           </p>
           <div className="text-xs md:text-sm text-secondary space-x-2 md:space-x-4 flex flex-wrap">
             <a href="/terms-and-conditions" className="hover:text-primary">
