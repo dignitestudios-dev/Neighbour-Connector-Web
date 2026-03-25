@@ -7,10 +7,9 @@ import Image from "next/image";
 const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/#features", label: "Features" },
-    { href: "/#how-it-works", label: "How it Works" },
-    { href: "/#about", label: "About us" },
     { href: "/#faq", label: "FAQ" },
+    { href: "/#thank-yous", label: "Thank You(s)" },
+    { href: "/#resources", label: "Resources" },
     { href: "/#contact", label: "Connect" },
   ];
 
@@ -77,30 +76,32 @@ const Navbar = () => {
       }
     });
 
-    // fallback: update active on scroll based on bounding boxes
+    // fallback: update active using the section currently in view
     const onScroll = () => {
-      const viewportTop = window.scrollY + window.innerHeight / 3;
-      let found = false;
-      
-      // Start from the end and work backwards to find the most relevant section
-      for (let i = navLinks.length - 1; i >= 1; i--) {
-        const l = navLinks[i];
-        const id = l.href.split("#")[1];
-        const el = document.getElementById(id);
+      const marker = window.scrollY + 140;
+      let matchedHref = "/";
 
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          const top = rect.top + window.scrollY;
-          
-          if (viewportTop >= top) {
-            setActive(l.href);
-            found = true;
-            break; // Stop after finding the deepest section
-          }
+      for (let i = 1; i < navLinks.length; i++) {
+        const link = navLinks[i];
+        const id = link.href.split("#")[1];
+        const el = document.getElementById(id);
+        if (!el) continue;
+
+        const rect = el.getBoundingClientRect();
+        const top = rect.top + window.scrollY;
+        const bottom = top + el.offsetHeight;
+
+        if (marker >= top && marker < bottom) {
+          matchedHref = link.href;
+          break;
         }
       }
-      
-      if (!found && window.scrollY < 200) setActive("/");
+
+      if (window.scrollY < 200) {
+        setActive("/");
+      } else {
+        setActive(matchedHref);
+      }
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
