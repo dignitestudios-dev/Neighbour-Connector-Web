@@ -78,7 +78,14 @@ const Features = () => {
               </div>
               <div>
                 <div className="flex items-center gap-4 mb-4">
-                  <Holly />
+                  {/* <Holly /> */}
+                  <Image
+                    src={"/images/holly2.png"}
+                    alt="Holly icon"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
                   <h4 className="text-base md:text-xl font-bold text-primary">
                     Ask Holly
                   </h4>
