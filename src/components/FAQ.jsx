@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Holly from "./icons/Holly";
+import Image from "next/image";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -157,9 +158,19 @@ const FAQ = () => {
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-secondary mb-4">
-            Frequently Asked Questions
-          </h2>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <h2 className="text-4xl md:text-5xl font-black text-secondary mb-4">
+              Frequently Asked Questions
+            </h2>
+
+            <Image
+              src="/images/holly.png"
+              alt="Holly Icon"
+              width={48}
+              height={48}
+            />
+          </div>
+
           <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed max-w-2xl mx-auto">
             Holly can help you find answers to some common questions about
             NeighborConnector™ and how to get started building your circle
@@ -251,7 +262,7 @@ const FAQ = () => {
         </div>
 
         {/* Support Contact */}
-        <div className="mt-10 md:mt-12 p-6 md:p-8 bg-linear-to-r from-[#07519B]/5 to-[#619908]/5 rounded-lg border border-[#88CE00]/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* <div className="mt-10 md:mt-12 p-6 md:p-8 bg-linear-to-r from-[#07519B]/5 to-[#619908]/5 rounded-lg border border-[#88CE00]/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-base md:text-lg font-bold text-secondary mb-1">
               Need immediate help?
@@ -279,20 +290,8 @@ const FAQ = () => {
             </svg>
             720-693-2522
           </a>
-        </div>
+        </div> */}
 
-        {/* Bottom CTA */}
-        <div className="mt-12 md:mt-16 p-6 md:p-8 bg-linear-to-r from-[#07519B]/5 to-[#619908]/5 rounded-lg border border-[#88CE00]/30 text-center">
-          <p className="text-base md:text-lg font-medium text-black/50 mb-4">
-            Still have questions?
-          </p>
-          <a
-            href="/#contact"
-            className="inline-block px-6 md:px-8 py-3 md:py-4 bg-primary text-white font-bold rounded-lg hover:bg-[#054073] transition-colors duration-300"
-          >
-            Contact Us
-          </a>
-        </div>
       </div>
     </section>
   );

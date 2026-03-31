@@ -91,7 +91,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="relative w-full bg-white py-12 md:py-16 font-medium">
+    <footer className="relative w-full bg-white pt-12 md:pt-16 font-medium">
       <SuccessModal
         isOpen={showModal}
         onClose={() => setShowModal(false)}
@@ -246,6 +246,21 @@ const Footer = () => {
               Legal Disclaimer
             </a>
           </div>
+        </div>
+      </div>
+
+      {/* Still have questions strip */}
+      <div className="w-full bg-primary mt-8 py-4 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
+          <p className="text-white font-medium text-sm md:text-base">
+            Still have questions?
+          </p>
+          <a
+            href="/#contact"
+            className="px-5 py-2 bg-white text-primary font-bold rounded-lg text-sm md:text-base hover:bg-gray-100 transition-colors duration-300"
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </footer>

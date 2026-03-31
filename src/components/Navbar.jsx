@@ -3,21 +3,34 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/#faq", label: "FAQ" },
+    { href: "/#contact", label: "Connect" },
     { href: "/thank-yous", label: "Thank You(s)" },
     { href: "/resources", label: "Resources" },
-    { href: "/#contact", label: "Connect" },
   ];
 
+  const pathname = usePathname();
   const [active, setActive] = useState("/");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Highlight standalone pages (/thank-yous, /resources) based on pathname
   useEffect(() => {
-    // Observe in-page sections and update active nav link on scroll
+    const pageLink = navLinks.find(
+      (l) => !l.href.includes("#") && l.href !== "/" && l.href === pathname,
+    );
+    if (pageLink) {
+      setActive(pageLink.href);
+    }
+  }, [pathname]);
+
+  useEffect(() => {
+    // Only run scroll-based active tracking on the home page
+    if (pathname !== "/") return;
     if (typeof window === "undefined") return;
 
     const idFromHref = (href) => {
@@ -113,7 +126,7 @@ const Navbar = () => {
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
     };
-  }, []);
+  }, [pathname]);
 
   const handleNavClick = (e, href) => {
     // smooth scroll for in-page anchors
