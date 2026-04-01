@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/faqs", label: "FAQ's" },
+    { href: "/faqs", label: "FAQs" },
     { href: "/connect", label: "Connect" },
     { href: "/thank-yous", label: "Thank You(s)" },
     { href: "/resources", label: "Resources" },
