@@ -122,16 +122,15 @@ const Footer = () => {
               <h3 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
                 Links
               </h3>
-              <p className="text-xs md:text-sm text-black/50 mb-4">
+              {/* <p className="text-xs md:text-sm text-black/50 mb-4">
                 (Stats you shared) - Remember anything that has dated statistics
                 must be periodically updated for optimal SEO/GEO-search engine
                 optimization and generative engine optimization for ranking and
                 visibility.
-              </p>
+              </p> */}
               <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
-                <li>Stats You Shared Remember Anything</li>
-                <li>SEO Updates Status</li>
                 <li>External Research Links</li>
+                <li>Articles/Newsletters/Blogs</li>
               </ul>
             </div>
           </div>

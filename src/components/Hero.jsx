@@ -73,13 +73,6 @@ const Hero = () => {
               among older adults and vulnerable neighbors in need of local help.
             </p>
 
-            <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed">
-              Unlike other community platforms designed for hundreds of homes or
-              HOA communities, NeighborConnector
-              <sub className="text-[10px] font-semibold ml-1">TM</sub> focuses
-              on relationships among a select few people you've met and want to
-              build trust with.
-            </p>
 
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed">
               Create a circle or have your closest neighbors, friends and family

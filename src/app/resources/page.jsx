@@ -19,7 +19,7 @@ const ResourcesPage = () => {
             <p className="text-sm md:text-lg">
               - Community Resources (Paid Advertisers)
             </p>
-            <p className="text-sm md:text-lg">- Articles/Newsletter/Blogs</p>
+            <p className="text-sm md:text-lg">- Articles/Newsletters/Blogs</p>
           </div>
         </div>
       </div>
