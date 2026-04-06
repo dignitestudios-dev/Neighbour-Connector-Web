@@ -7,7 +7,7 @@ const TermsAndConditions = () => {
       {/* Header */}
       <div className="mb-8 pb-6">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          TERMS AND CONDITIONS — NeighborConnector™
+          TERMS AND CONDITIONS — NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub>
         </h1>
         <div className="text-sm text-gray-600">
           <p>
@@ -19,7 +19,7 @@ const TermsAndConditions = () => {
         </div>
         <p className="mt-4 text-gray-700">
           These Terms and Conditions ("Terms") govern your access to and use of
-          the NeighborConnector™ mobile application ("the App"), operated by
+          the NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> mobile application ("the App"), operated by
           Community Care Housing ("Community Care Housing," "CCH," "we," "us,"
           or "our").
         </p>
@@ -42,7 +42,7 @@ const TermsAndConditions = () => {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
-              NeighborConnector™ is a community-based communication and safety
+              NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> is a community-based communication and safety
               support tool designed to help neighbors, volunteers, and community
               members connect, communicate, and support one another.
             </li>
@@ -139,7 +139,7 @@ const TermsAndConditions = () => {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
-              NeighborConnector™ is intended to support community communication
+              NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> is intended to support community communication
               and awareness only.
             </li>
             <li>The App does not replace emergency services</li>

@@ -11,7 +11,7 @@ const Resources = () => {
 
           <div className="mt-8 md:mt-10 text-center text-black/70 space-y-2">
             <p className="text-lg md:text-2xl font-semibold text-primary">
-              Neighbor Connector Library
+              Neighbor Connector<sub className="text-[10px] font-semibold ml-1">TM</sub> Library
             </p>
             <p className="text-sm md:text-lg">- Videos</p>
             <p className="text-sm md:text-lg">- Presentations/Events</p>
@@ -19,7 +19,7 @@ const Resources = () => {
             <p className="text-sm md:text-lg">
               - Community Resources (Paid Advertisers)
             </p>
-            <p className="text-sm md:text-lg">- Articles/Newsletter/Blog Ideas</p>
+            <p className="text-sm md:text-lg">- Articles/Newsletter/Blogs</p>
           </div>
         </div>
       </div>

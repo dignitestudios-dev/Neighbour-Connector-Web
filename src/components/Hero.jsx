@@ -38,9 +38,11 @@ const Hero = () => {
             {/* Welcome Text */}
             <h1 className="text-3xl md:text-5xl font-bold text-secondary leading-tight">
               Welcome to <br />
-                <span className="text-success font-black text-3xl md:text-5xl">
+              <span className="text-success font-black text-3xl md:text-5xl">
                 Neighbor Connector
-                <sup className="text-success text-xs md:text-lg font-black ml-1">™</sup>
+                <sub className="text-success text-[10px] font-semibold ml-1">
+                  TM
+                </sub>
               </span>
             </h1>
 
@@ -51,22 +53,39 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed mt-6">
-              The NeighborConnector™ app helps community members create personal
-              profiles and invite others into their trusted micro-circles.
-              Residents can connect securely to share
-              support and companionship. You can also connect with close friends and family outside your neighborhood.
+              The NeighborConnector
+              <sub className="text-[10px] font-semibold ml-1">TM</sub> app helps
+              community members create personal profiles and invite others into
+              their trusted micro-circles. Residents can connect securely to
+              share support and companionship. You can also connect with close
+              friends and family outside your neighborhood.
+            </p>
+
+            <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
+              Current community apps and volunteer platforms emphasize large,
+              broadcast-style communication on social feeds that offer resources
+              and tools, but they don't support small-scale community building,
+              trust or companionship the way NeighborConnector
+              <sub className="text-[10px] font-semibold ml-1">TM</sub> does. In
+              an age of technology, neighbors, friends and family remain
+              disconnected and unaware of potential support systems. Loneliness
+              and isolation are creating a serious health crisis, especially
+              among older adults and vulnerable neighbors in need of local help.
             </p>
 
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed">
               Unlike other community platforms designed for hundreds of homes or
-              HOA communities, NeighborConnector™ focuses on relationships among
-              a select few people you've met and want to build trust with.
+              HOA communities, NeighborConnector
+              <sub className="text-[10px] font-semibold ml-1">TM</sub> focuses
+              on relationships among a select few people you've met and want to
+              build trust with.
             </p>
 
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed">
-              Create a circle or have your closest neighbors, friends and family join by invitation only, eliminating noise
-              from people outside your private circle for a more intimate
-              experience. We call this "Circle Living."
+              Create a circle or have your closest neighbors, friends and family
+              join by invitation only, eliminating noise from people outside
+              your private circle for a more intimate experience. We call this
+              "Circle Living."
             </p>
           </div>
         </div>

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const SuccessModal = ({
   isOpen,
@@ -57,6 +58,8 @@ const Footer = () => {
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   async function handleNewsletterSubmit(e) {
     e.preventDefault();
@@ -110,7 +113,9 @@ const Footer = () => {
           height={500}
           className="w-40 md:w-60 mb-8 md:mb-12"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12 ${!isHome ? "hidden" : ""}`}
+        >
           {/* Left column - Links */}
           <div className="flex-1 space-y-6">
             <div>
@@ -124,9 +129,9 @@ const Footer = () => {
                 visibility.
               </p>
               <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
-                <li>Stats you shared remember anything</li>
-                <li>SEO updates status</li>
-                <li>External research link</li>
+                <li>Stats You Shared Remember Anything</li>
+                <li>SEO Updates Status</li>
+                <li>External Research Links</li>
               </ul>
             </div>
           </div>
@@ -189,14 +194,14 @@ const Footer = () => {
           {/* Right Column - Newsletter */}
           <div className="flex-1">
             <h4 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
-              Newsletter/Blog Ideas
+              Articles/Newsletters/Blogs
             </h4>
             <p className="text-xs md:text-sm text-black/50 mb-6">
               Articles About Loneliness/Isolation Health Crisis, Aging Boomers,
               Senior Issues, Isolated Parents And Children, Single Parents,
               Isolated 20s And 30s In A Digital World, Shared Housing, Community
               For People Of Different Age Groups, Comparison Chart Between
-              Neighbor Connector And Other App Features, Etc.
+              Neighbor Connector<sub className="text-[10px] font-semibold ml-1">TM</sub> And Other App Features, Etc.
             </p>
 
             {/* <form onSubmit={handleNewsletterSubmit} className="space-y-4">
@@ -231,7 +236,8 @@ const Footer = () => {
         {/* Bottom footer */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-xs md:text-sm text-secondary">
-            Copyright © {new Date().getFullYear()} Neighbor Connector<sup>™</sup>. All rights reserved.
+            Copyright © {new Date().getFullYear()} Neighbor Connector
+            <sub className="text-[10px] font-semibold ml-1">TM</sub>. All rights reserved.
           </p>
           <div className="text-xs md:text-sm text-secondary space-x-2 md:space-x-4 flex flex-wrap">
             <a href="/terms-and-conditions" className="hover:text-primary">
@@ -256,7 +262,7 @@ const Footer = () => {
             Still have questions?
           </p>
           <a
-            href="/#contact"
+            href="/connect"
             className="px-5 py-2 bg-white text-primary font-bold rounded-lg text-sm md:text-base hover:bg-gray-100 transition-colors duration-300"
           >
             Contact Us

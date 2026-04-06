@@ -7,6 +7,14 @@ import Image from "next/image";
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+  const renderWithTM = (text) =>
+    text.split("™").map((part, i, arr) => (
+      <React.Fragment key={i}>
+        {part}
+        {i < arr.length - 1 && <sub className="text-[10px] font-semibold ml-1">TM</sub>}
+      </React.Fragment>
+    ));
+
   const faqData = [
     {
       category: "Getting Started",
@@ -173,7 +181,7 @@ const FAQ = () => {
 
           <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed max-w-2xl mx-auto">
             Holly can help you find answers to some common questions about
-            NeighborConnector™ and how to get started building your circle
+            NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> and how to get started building your circle
             today.
           </p>
 
@@ -222,7 +230,7 @@ const FAQ = () => {
                         aria-expanded={openIndex === itemIndex}
                       >
                         <h4 className="text-left text-base md:text-lg font-bold text-secondary">
-                          {item.question}
+                          {renderWithTM(item.question)}
                         </h4>
                         <svg
                           className={`w-6 h-6 text-primary transition-transform duration-300 shrink-0 ml-4 ${
@@ -249,7 +257,7 @@ const FAQ = () => {
                       >
                         <div className="px-6 py-4 md:py-5 bg-[#FAFBFF] border-t border-gray-200">
                           <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
-                            {item.answer}
+                            {renderWithTM(item.answer)}
                           </p>
                         </div>
                       </div>
