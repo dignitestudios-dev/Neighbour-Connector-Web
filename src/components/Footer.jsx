@@ -109,8 +109,8 @@ const Footer = () => {
         <Image
           src="/images/logo.png"
           alt="Neighbor Connector Logo"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="w-40 md:w-60 mb-8 md:mb-12"
         />
         <div

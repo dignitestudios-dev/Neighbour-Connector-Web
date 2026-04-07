@@ -163,10 +163,10 @@ const Navbar = () => {
             <Image
               src="/images/logo.png"
               alt="Neighbor Connector Logo"
-              width={186}
-              height={96}
+              width={500}
+              height={500}
               priority
-              className="md:h-20 h-14 w-auto"
+              className="md:h-24 h-14 w-auto"
             />
           </Link>
 

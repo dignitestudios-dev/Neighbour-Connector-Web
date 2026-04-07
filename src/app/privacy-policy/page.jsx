@@ -4,7 +4,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="mx-auto px-4 py-12 text-gray-800">
       <h1 className="text-3xl font-bold mb-2">PRIVACY POLICY — NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub></h1>
-      <p className="text-sm text-gray-600 mb-8">Effective Date: January 1, 2025</p>
+      <p className="text-sm text-gray-600 mb-8">Effective Date: April, 2026</p>
 
       <p className="mb-6">
         Community Care Housing ("Community Care Housing," "CCH," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, share and protect personal information when you use the NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> mobile application ("the App").

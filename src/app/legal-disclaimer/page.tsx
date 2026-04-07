@@ -7,7 +7,7 @@ const LegalDisclaimer = () => {
         LEGAL DISCLAIMER — NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub>
       </h1>
       <p className="text-sm text-gray-600 mb-8">
-        Effective Date: January 1, 2025
+        Effective Date: April, 2026
       </p>
 
       <p className="mb-6">

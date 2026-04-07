@@ -11,10 +11,10 @@ const TermsAndConditions = () => {
         </h1>
         <div className="text-sm text-gray-600">
           <p>
-            <strong>Effective Date:</strong> January 1, 2025
+            <strong>Effective Date:</strong> April, 2026
           </p>
           <p>
-            <strong>Last Updated:</strong> January 1, 2025
+            <strong>Last Updated:</strong> April, 2026
           </p>
         </div>
         <p className="mt-4 text-gray-700">
