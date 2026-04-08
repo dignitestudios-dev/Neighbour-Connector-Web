@@ -22,8 +22,7 @@ const HowItWorks = () => {
                 </h3>
                 <p className="text-base md:text-lg font-medium text-black/50 mt-2">
                   Download the app and create your profile by adding your name,
-                  photo and a few details about yourself. You can add emergency
-                  contact numbers if you want. Share only what you feel
+                  photo and a few details about yourself. You can hide or make visible your emergency contact numbers if you want. Share only what you feel
                   comfortable with. You can update your profile whenever you
                   like.
                 </p>

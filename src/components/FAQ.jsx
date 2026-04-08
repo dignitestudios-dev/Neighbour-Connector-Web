@@ -11,7 +11,7 @@ const FAQ = () => {
     text.split("™").map((part, i, arr) => (
       <React.Fragment key={i}>
         {part}
-        {i < arr.length - 1 && <sub className="text-[10px] font-semibold ml-1">TM</sub>}
+        {i < arr.length - 1 && <sup className="text-[10px] font-semibold ml-1">TM</sup>}
       </React.Fragment>
     ));
 
@@ -181,7 +181,7 @@ const FAQ = () => {
 
           <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed max-w-2xl mx-auto">
             Holly can help you find answers to some common questions about
-            NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> and how to get started building your circle
+            NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> and how to get started building your circle
             today.
           </p>
 

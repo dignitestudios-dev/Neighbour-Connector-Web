@@ -171,7 +171,13 @@ const Footer = () => {
             </div>
 
             {/* Product */}
-            <div>
+           
+          </div>
+
+          {/* Right Column - Newsletter */}
+          <div className="flex-1">
+
+             <div>
               <h4 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
                 Product
               </h4>
@@ -188,11 +194,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
-
-          {/* Right Column - Newsletter */}
-          <div className="flex-1">
-            <h4 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
+            {/* <h4 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
               Articles/Newsletters/Blogs
             </h4>
             <p className="text-xs md:text-sm text-black/50 mb-6">
@@ -201,7 +203,7 @@ const Footer = () => {
               Isolated 20s And 30s In A Digital World, Shared Housing, Community
               For People Of Different Age Groups, Comparison Chart Between
               Neighbor Connector<sub className="text-[10px] font-semibold ml-1">TM</sub> And Other App Features, Etc.
-            </p>
+            </p> */}
 
             {/* <form onSubmit={handleNewsletterSubmit} className="space-y-4">
               {error && (
@@ -236,7 +238,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-xs md:text-sm text-secondary">
             Copyright © {new Date().getFullYear()} Neighbor Connector
-            <sub className="text-[10px] font-semibold ml-1">TM</sub>. All rights reserved.
+            <sup className="text-[10px] font-semibold ml-1">TM</sup>. All rights reserved.
           </p>
           <div className="text-xs md:text-sm text-secondary space-x-2 md:space-x-4 flex flex-wrap">
             <a href="/terms-and-conditions" className="hover:text-primary">

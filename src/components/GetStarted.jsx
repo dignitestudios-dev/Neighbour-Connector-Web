@@ -11,7 +11,7 @@ const GetStarted = () => {
         </h2>
 
         <p className="text-white text-sm md:text-lg">
-          Download the NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> app and start your Circle Living
+          Download the NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> app and start your Circle Living
           today!!
         </p>
 
