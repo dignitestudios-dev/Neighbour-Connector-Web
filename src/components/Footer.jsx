@@ -130,7 +130,7 @@ const Footer = () => {
               </p> */}
               <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
                 <li>External Research Links</li>
-                <li>Articles/Newsletters/Blogs</li>
+                {/* <li>Articles/Newsletters/Blogs</li> */}
               </ul>
             </div>
           </div>
@@ -199,8 +199,7 @@ const Footer = () => {
               Articles About Loneliness/Isolation Health Crisis, Aging Boomers,
               Senior Issues, Isolated Parents And Children, Single Parents,
               Isolated 20s And 30s In A Digital World, Shared Housing, Community
-              For People Of Different Age Groups, Comparison Chart Between
-              Neighbor Connector<sub className="text-[10px] font-semibold ml-1">TM</sub> And Other App Features, Etc.
+              For People Of Different Age Groups,  And Other App Features, Etc.
             </p>
 
             {/* <form onSubmit={handleNewsletterSubmit} className="space-y-4">
@@ -236,7 +235,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-xs md:text-sm text-secondary">
             Copyright © {new Date().getFullYear()} Neighbor Connector
-            <sub className="text-[10px] font-semibold ml-1">TM</sub>. All rights reserved.
+            <sup className="text-[10px] font-semibold ml-1">TM</sup>. All rights reserved.
           </p>
           <div className="text-xs md:text-sm text-secondary space-x-2 md:space-x-4 flex flex-wrap">
             <a href="/terms-and-conditions" className="hover:text-primary">

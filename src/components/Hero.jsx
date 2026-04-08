@@ -8,15 +8,17 @@ const Hero = () => {
   return (
     <section className="relative w-full min-h-screen bg-white overflow-hidden pt-12 md:pt-24">
       {/* Decorative Stars */}
-      <div className="absolute top-12 left-6 md:left-12 w-8 md:w-16 h-8 md:h-16">
-        <Star />
-      </div>
-      <div className="absolute top-20 right-6 md:right-20 w-6 md:w-12 h-6 md:h-12 transform rotate-45">
-        <Star />
-      </div>
-      <div className="absolute bottom-32 left-[50%] w-6 md:w-12 h-6 md:h-12 transform rotate-45">
-        <Star />
-      </div>
+     <div className="absolute top-12 left-6 md:left-12 w-14 md:w-24 h-14 md:h-24 z-0">
+  <Star />
+</div>
+
+<div className="absolute top-20 right-6 md:right-20 w-12 md:w-20 h-12 md:h-20 transform rotate-45 z-0">
+  <Star />
+</div>
+
+<div className="absolute hidden md:block lg:block bottom-32 left-[50%] w-12 md:w-20 h-12 md:h-20 transform rotate-45 z-0">
+  <Star />
+</div>
 
       {/* Main Container */}
       <div className="h-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
@@ -37,14 +39,14 @@ const Hero = () => {
           <div className="space-y-4">
             {/* Welcome Text */}
             <h1 className="text-3xl md:text-5xl font-bold text-secondary leading-tight">
-              Welcome to <br />
-              <span className="text-success font-black text-3xl md:text-5xl">
-                Neighbor Connector
-                <sub className="text-success text-[10px] font-semibold ml-1">
-                  TM
-                </sub>
-              </span>
-            </h1>
+  Welcome to <br />
+  <span className="relative inline-block text-success font-black text-3xl md:text-5xl">
+    Neighbor Connector
+    <span className="absolute top-0 -right-4 text-[10px] font-semibold">
+      TM
+    </span>
+  </span>
+</h1>
 
             {/* Subtitle */}
             <h2 className="text-lg md:text-2xl font-bold text-primary leading-snug">
@@ -54,7 +56,7 @@ const Hero = () => {
             {/* Description */}
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed mt-6">
               The NeighborConnector
-              <sub className="text-[10px] font-semibold ml-1">TM</sub> app helps
+              <sup className="text-[10px] font-semibold ml-1">TM</sup> app helps
               community members create personal profiles and invite others into
               their trusted micro-circles. Residents can connect securely to
               share support and companionship. You can also connect with close
@@ -66,7 +68,7 @@ const Hero = () => {
               broadcast-style communication on social feeds that offer resources
               and tools, but they don't support small-scale community building,
               trust or companionship the way NeighborConnector
-              <sub className="text-[10px] font-semibold ml-1">TM</sub> does. In
+              <sup className="text-[10px] font-semibold ml-1">TM</sup> does. In
               an age of technology, neighbors, friends and family remain
               disconnected and unaware of potential support systems. Loneliness
               and isolation are creating a serious health crisis, especially
