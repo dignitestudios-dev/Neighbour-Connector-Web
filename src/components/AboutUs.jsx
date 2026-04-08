@@ -49,7 +49,7 @@ const AboutUs = () => {
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
               The NeighborConnector
               <sup className="text-[10px] font-semibold ml-1">TM</sup> App helps
-              people connect naturally and thrive in their communities.Let's Live it
+              people connect naturally and thrive in their communities. Let's Live it
               up with "Circle Living!"
             </p>
           </div>

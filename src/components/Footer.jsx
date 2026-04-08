@@ -130,7 +130,7 @@ const Footer = () => {
               </p> */}
               <ul className="space-y-2 text-xs md:text-sm text-black/50 mb-6">
                 <li>External Research Links</li>
-                <li>Articles/Newsletters/Blogs</li>
+                {/* <li>Articles/Newsletters/Blogs</li> */}
               </ul>
             </div>
           </div>
@@ -171,13 +171,7 @@ const Footer = () => {
             </div>
 
             {/* Product */}
-           
-          </div>
-
-          {/* Right Column - Newsletter */}
-          <div className="flex-1">
-
-             <div>
+            <div>
               <h4 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
                 Product
               </h4>
@@ -194,16 +188,19 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/* <h4 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
+          </div>
+
+          {/* Right Column - Newsletter */}
+          <div className="flex-1">
+            <h4 className="text-lg md:text-2xl font-extrabold text-secondary mb-4">
               Articles/Newsletters/Blogs
             </h4>
             <p className="text-xs md:text-sm text-black/50 mb-6">
               Articles About Loneliness/Isolation Health Crisis, Aging Boomers,
               Senior Issues, Isolated Parents And Children, Single Parents,
               Isolated 20s And 30s In A Digital World, Shared Housing, Community
-              For People Of Different Age Groups, Comparison Chart Between
-              Neighbor Connector<sub className="text-[10px] font-semibold ml-1">TM</sub> And Other App Features, Etc.
-            </p> */}
+              For People Of Different Age Groups,  And Other App Features, Etc.
+            </p>
 
             {/* <form onSubmit={handleNewsletterSubmit} className="space-y-4">
               {error && (

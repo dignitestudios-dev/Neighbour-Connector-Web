@@ -42,7 +42,7 @@ const Hero = () => {
   Welcome to <br />
   <span className="relative inline-block text-success font-black text-3xl md:text-5xl">
     Neighbor Connector
-    <span className="absolute top-0 right-0 text-[10px] font-semibold">
+    <span className="absolute top-0 -right-4 text-[10px] font-semibold">
       TM
     </span>
   </span>
@@ -56,7 +56,7 @@ const Hero = () => {
             {/* Description */}
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed mt-6">
               The NeighborConnector
-              <sub className="text-[10px] font-semibold ml-1">TM</sub> app helps
+              <sup className="text-[10px] font-semibold ml-1">TM</sup> app helps
               community members create personal profiles and invite others into
               their trusted micro-circles. Residents can connect securely to
               share support and companionship. You can also connect with close
@@ -68,7 +68,7 @@ const Hero = () => {
               broadcast-style communication on social feeds that offer resources
               and tools, but they don't support small-scale community building,
               trust or companionship the way NeighborConnector
-              <sub className="text-[10px] font-semibold ml-1">TM</sub> does. In
+              <sup className="text-[10px] font-semibold ml-1">TM</sup> does. In
               an age of technology, neighbors, friends and family remain
               disconnected and unaware of potential support systems. Loneliness
               and isolation are creating a serious health crisis, especially
