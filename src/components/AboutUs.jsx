@@ -31,7 +31,7 @@ const AboutUs = () => {
               volunteer-powered free mobile app designed to help neighbors build
               trust and support within small, verified social groups called
               "micro-circles". It was developed by a division of Community Care
-              Housing, a 501(c)(3) organization that promotes connected and
+              Housing,a 501(c)(3) organization that promotes connected and
               shared housing opportunities, offers scholarships and grants to
               those in need, along with raising awareness and providing
               education on housing issues.
