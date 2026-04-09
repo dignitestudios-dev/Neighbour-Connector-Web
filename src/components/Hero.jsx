@@ -8,17 +8,17 @@ const Hero = () => {
   return (
     <section className="relative w-full min-h-screen bg-white overflow-hidden pt-12 md:pt-24">
       {/* Decorative Stars */}
-     <div className="absolute top-12 left-6 md:left-12 w-14 md:w-24 h-14 md:h-24 z-0">
-  <Star />
-</div>
+      <div className="absolute top-12 left-6 md:left-12 w-14 md:w-24 h-14 md:h-24 z-0">
+        <Star />
+      </div>
 
-<div className="absolute top-20 right-6 md:right-20 w-12 md:w-20 h-12 md:h-20 transform rotate-45 z-0">
-  <Star />
-</div>
+      <div className="absolute top-20 right-6 md:right-20 w-12 md:w-20 h-12 md:h-20 transform rotate-45 z-0">
+        <Star />
+      </div>
 
-<div className="absolute hidden md:block lg:block bottom-32 left-[50%] w-12 md:w-20 h-12 md:h-20 transform rotate-45 z-0">
-  <Star />
-</div>
+      <div className="absolute hidden md:block lg:block bottom-32 left-[50%] w-12 md:w-20 h-12 md:h-20 transform rotate-45 z-0">
+        <Star />
+      </div>
 
       {/* Main Container */}
       <div className="h-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
@@ -39,14 +39,14 @@ const Hero = () => {
           <div className="space-y-4">
             {/* Welcome Text */}
             <h1 className="text-3xl md:text-5xl font-bold text-secondary leading-tight">
-  Welcome to <br />
-  <span className="relative inline-block text-success font-black text-3xl md:text-5xl">
-    Neighbor Connector
-    <span className="absolute top-0 -right-4 text-[10px] font-semibold">
-      TM
-    </span>
-  </span>
-</h1>
+              Welcome to <br />
+              <span className="relative inline-block text-success font-black text-3xl md:text-5xl">
+                Neighbor Connector
+                <span className="absolute top-3 -right-4 text-[10px] font-semibold">
+                  TM
+                </span>
+              </span>
+            </h1>
 
             {/* Subtitle */}
             <h2 className="text-lg md:text-2xl font-bold text-primary leading-snug">
