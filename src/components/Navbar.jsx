@@ -10,7 +10,7 @@ const Navbar = () => {
     { href: "/", label: "Home" },
     { href: "/faqs", label: "FAQs" },
     { href: "/connect", label: "Connect" },
-    { href: "/thank-yous", label: "Thank You(s)" },
+    { href: "/thank-yous", label: "Acknowledgements" },
     { href: "/resources", label: "Resources" },
   ];
 
@@ -155,20 +155,20 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
-          <Link
-            href="/"
-            className="shrink-0"
-            aria-label="Neighbor Connector home"
-          >
-            <Image
-              src="/images/logo.png"
-              alt="Neighbor Connector Logo"
-              width={500}
-              height={500}
-              priority
-              className="md:h-30 h-24 w-auto"
-            />
-          </Link>
+           <Link
+    href="/"
+    className="shrink-0 flex items-center h-12 md:h-14" // ✅ fixed navbar height
+    aria-label="Neighbor Connector home"
+  >
+    <Image
+      src="/images/logo.png"
+      alt="Neighbor Connector Logo"
+      width={500}
+      height={500}
+      priority
+      className="h-full w-auto object-contain scale-200 md:scale-250 origin-left" 
+    />
+  </Link>
 
           {/* Desktop Navigation Links */}
           <ul className="hidden md:flex items-center gap-8" role="list">

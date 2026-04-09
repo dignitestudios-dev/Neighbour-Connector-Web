@@ -27,28 +27,24 @@ const AboutUs = () => {
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
               The NeighborConnector
-              <sup className="text-[10px] font-semibold ml-1">TM</sup> App is a
+              <sup className="text-[10px] font-semibold ">TM</sup> App is a
               volunteer-powered free mobile app designed to help neighbors build
               trust and support within small, verified social groups called
-              "micro-circles". It was developed by a division of Community Care
-              Housing,a 501(c)(3) organization that promotes connected and
-              shared housing opportunities, offers scholarships and grants to
-              those in need, along with raising awareness and providing
-              education on housing issues.
+              "micro-circles". It was developed by Community Care Housing, a 501(c)(3) organization that promotes connected and shared housing opportunities, offers scholarships and grants to those in need, along with raising awareness and providing education on housing issues.
             </p>
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
               A part of connected and shared housing involves technology so unlike other community
               platforms designed for hundreds of homes or HOA communities,
               NeighborConnector
-              <sup className="text-[10px] font-semibold ml-1">TM</sup> focuses
+              <sup className="text-[10px] font-semibold ">TM</sup> focuses
               on relationships among a select few people you've met and want to
               build trust with.
             </p>
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
               The NeighborConnector
-              <sup className="text-[10px] font-semibold ml-1">TM</sup> App helps
+              <sup className="text-[10px] font-semibold">TM</sup> App helps
               people connect naturally and thrive in their communities. Let's Live it
               up with "Circle Living!"
             </p>

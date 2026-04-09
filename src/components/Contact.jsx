@@ -272,7 +272,7 @@ const Contact = () => {
               <p className="text-sm md:text-lg">
                 Join or create multiple "micro-circles" with friends, family and
                 coworkers. Anyone can feel lonely or isolated, especially as we
-                age. With the NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> App, your circles of maybe 2–10
+                age. With the NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> App, your circles of maybe 2–10
                 members can bring friendship, well-being and a sense of
                 community when you need it most.
               </p>
@@ -289,7 +289,7 @@ const Contact = () => {
               </h4>
               <p className="text-sm md:text-base text-black/60">
                 Visit the Community Care Housing website to donate or sponsor
-                the NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> App or help develop more housing in
+                the NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> App or help develop more housing in
                 planned communities for shared housing and senior housing. QR
                 Code for Donations and link to{" "}
                 <Link

@@ -42,7 +42,7 @@ const Hero = () => {
               Welcome to <br />
               <span className="relative inline-block text-success font-black text-3xl md:text-5xl">
                 Neighbor Connector
-                <span className="absolute top-3 -right-4 text-[10px] font-semibold">
+                <span className="absolute top-1 lg:top-1 md:top-2 -right-4 text-[10px] font-semibold">
                   TM
                 </span>
               </span>
@@ -56,7 +56,7 @@ const Hero = () => {
             {/* Description */}
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed mt-6">
               The NeighborConnector
-              <sup className="text-[10px] font-semibold ml-1">TM</sup> app helps
+              <sup className="text-[10px] font-semibold ml-1">TM</sup> App helps
               community members create personal profiles and invite others into
               their trusted micro-circles. Residents can connect securely to
               share support and companionship. You can also connect with close
