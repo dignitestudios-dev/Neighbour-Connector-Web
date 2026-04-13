@@ -3,9 +3,9 @@ import React from "react";
 const page = () => {
   return (
     <div className="mx-auto px-4 py-12 text-gray-800">
-      <h1 className="text-3xl font-bold mb-2">
+      <h1 className="text-3xl font-bold mb-2 relative">
         CHILD SAFETY POLICY - NeighborConnector
-        <sub className="text-[10px] font-semibold ml-1">TM</sub>
+        <sup className="text-[10px] font-semibold absolute top-2">TM</sup>
       </h1>
       <p className="text-sm text-gray-600 mb-8">Effective Date: April, 2026</p>
 
