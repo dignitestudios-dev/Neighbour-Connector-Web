@@ -3,15 +3,15 @@ import React from "react";
 const LegalDisclaimer = () => {
   return (
     <div className="mx-auto px-4 py-12 text-gray-800">
-      <h1 className="text-3xl font-bold mb-2">
-        LEGAL DISCLAIMER — NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub>
+      <h1 className="text-3xl font-bold mb-2 relative">
+        LEGAL DISCLAIMER — NeighborConnector<sup className="text-[10px] font-semibold absolute top-2">TM</sup>
       </h1>
       <p className="text-sm text-gray-600 mb-8">
         Effective Date: April, 2026
       </p>
 
       <p className="mb-6">
-        NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> (the "App") is operated by Community Care Housing
+        NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> (the "App") is operated by Community Care Housing
         ("Community Care Housing," "CCH," "we," "us," or "our"), a United
         States–based 501(c)(3) nonprofit organization headquartered in Colorado.
       </p>
@@ -26,7 +26,7 @@ const LegalDisclaimer = () => {
       </h2>
       <ul className="list-disc list-inside mb-6 space-y-3">
         <li>
-          NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> is a community communication and coordination tool
+          NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> is a community communication and coordination tool
           intended to support neighbor connections and safety awareness.
         </li>
         <li>
@@ -73,7 +73,7 @@ const LegalDisclaimer = () => {
       </h2>
       <ul className="list-disc list-inside mb-6 space-y-3">
         <li>
-          Participation in NeighborConnector<sub className="text-[10px] font-semibold ml-1">TM</sub> is voluntary. Users assume all
+          Participation in NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> is voluntary. Users assume all
           risks associated with using the App, including reliance on information
           provided by other users.
         </li>
