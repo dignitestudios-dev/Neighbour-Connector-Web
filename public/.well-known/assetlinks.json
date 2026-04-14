@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.cts.neighbour_connector",
+      "sha256_cert_fingerprints": [
+        "98:2C:71:A8:6A:31:F3:B6:15:52:E7:32:67:06:9C:CC:CB:17:F0:F8:21:48:D0:56:DD:12:54:C2:05:41:39:26"
+      ]
+    }
+  }
+]
