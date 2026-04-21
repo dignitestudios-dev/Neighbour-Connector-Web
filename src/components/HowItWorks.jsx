@@ -21,7 +21,7 @@ const HowItWorks = () => {
                   Step 1: Create Your Profile
                 </h3>
                 <p className="text-base md:text-lg font-medium text-black/50 mt-2">
-                  Download the app and create your profile by adding your name,
+                  Download the App and create your profile by adding your name,
                   photo and a few details about yourself. You can hide or make visible your emergency contact numbers if you want. Share only what you feel
                   comfortable with. You can update your profile whenever you
                   like.
@@ -34,7 +34,7 @@ const HowItWorks = () => {
                 </h3>
                 <p className="text-base md:text-lg font-medium text-black/50 mt-2">
                   When you create a circle, pick a name for it. Invite trusted family, friends or neighbors who live nearby, and they'll get a message code inviting them to join. You approve all requests to join
-                  your group. You can also report users who aren't a good fit
+                  your circle. You can also report users who aren't a good fit
                   for your circle.
                 </p>
               </div>
