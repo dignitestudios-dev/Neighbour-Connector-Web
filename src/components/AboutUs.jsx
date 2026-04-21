@@ -34,15 +34,14 @@ const AboutUs = () => {
             </p>
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
-             CCH and The NeighborConnector
+             CCH and NeighborConnector
               <sup className="text-[10px] font-semibold ">TM</sup> are here to help make communities stronger, friendlier and more connected.  A part of connected and shared housing involves technology so unlike other community platforms designed for hundreds of homes or HOA communities, NeighborConnectorTM focuses on relationships among a select few people you've met and want to build trust with (aka “Circle LivingTM”)
               <sup className="text-[10px] font-semibold ">TM</sup> to connect naturally.   
             </p>
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
              Whether or not you are in connected or shared housing, let’s get connected to thrive in your community.
-              The NeighborConnector
-              <sup className="text-[10px] font-semibold">TM</sup> Tell others about the NeighborConnectorTM App and let’s live it up with "Circle Living
+              The NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> Tell others about the NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> App and let’s live it up with "Circle Living
               <sup className="text-[10px] font-semibold">TM</sup>".
             </p>
           </div>
