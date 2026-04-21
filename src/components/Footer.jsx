@@ -199,7 +199,7 @@ const Footer = () => {
               Articles About Loneliness/Isolation Health Crisis, Aging Boomers,
               Senior Issues, Isolated Parents And Children, Single Parents,
               Isolated 20s And 30s In A Digital World, Shared Housing, Community
-              For People Of Different Age Groups,  And Other App Features, Etc.
+              For People Of Different Age Groups, Etc.
             </p>
 
             {/* <form onSubmit={handleNewsletterSubmit} className="space-y-4">

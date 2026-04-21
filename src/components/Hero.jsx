@@ -31,6 +31,7 @@ const Hero = () => {
             height={700}
             className="object-contain w-full max-w-sm"
             priority
+            
           />
         </div>
 
@@ -56,7 +57,7 @@ const Hero = () => {
             {/* Description */}
             <p className="text-sm md:text-xl font-medium text-black/50 leading-relaxed mt-6">
               The NeighborConnector
-              <sup className="text-[10px] font-semibold ml-1">TM</sup> App helps
+              <sup className="text-[10px] font-semibold">TM</sup> App helps
               community members create personal profiles and invite others into
               their trusted micro-circles. Residents can connect securely to
               share support and companionship. You can also connect with close
@@ -68,7 +69,7 @@ const Hero = () => {
               broadcast-style communication on social feeds that offer resources
               and tools, but they don't support small-scale community building,
               trust or companionship the way NeighborConnector
-              <sup className="text-[10px] font-semibold ml-1">TM</sup> does. In
+              <sup className="text-[10px] font-semibold ">TM</sup> does. In
               an age of technology, neighbors, friends and family remain
               disconnected and unaware of potential support systems. Loneliness
               and isolation are creating a serious health crisis, especially
@@ -80,7 +81,8 @@ const Hero = () => {
               Create a circle or have your closest neighbors, friends and family
               join by invitation only, eliminating noise from people outside
               your private circle for a more intimate experience. We call this
-              "Circle Living."
+               “Circle Living
+              <sup className="text-[10px] font-semibold ">TM</sup>”
             </p>
           </div>
         </div>

@@ -90,7 +90,7 @@ const Features = () => {
                     Ask Holly
                   </h4>
                 </div>
-                <p className="text-sm md:text-lg font-medium capitalize text-black/50 leading-7">
+                <p className="text-sm md:text-lg font-medium  text-black/50 leading-7">
                   Holly is your personal assistant. She can answer your questions
               about the app as you learn to use it. She understands that not
               everyone is comfortable with technology.

@@ -30,12 +30,10 @@ const HowItWorks = () => {
 
               <div>
                 <h3 className="text-lg md:text-xl font-bold text-primary">
-                  Step 2: Click "Create Group" Or "Join Group"
+                  Step 2: Click "Create Circle" Or "Join A Circle"
                 </h3>
                 <p className="text-base md:text-lg font-medium text-black/50 mt-2">
-                  When you create a group, pick a name for it. Invite trusted
-                  family and friends who live nearby, and they'll get a message
-                  code inviting them to join. You approve all requests to join
+                  When you create a circle, pick a name for it. Invite trusted family, friends or neighbors who live nearby, and they'll get a message code inviting them to join. You approve all requests to join
                   your group. You can also report users who aren't a good fit
                   for your circle.
                 </p>
@@ -49,7 +47,7 @@ const HowItWorks = () => {
                   Once you have your circle, start individual conversations by
                   checking in with your people, posting your thoughts and ideas
                   or asking for support. Respond to others posts and stay in
-                  touch. If you want to have other discussions, start a group
+                  touch. If you want to have other discussions, start a circle
                   chat!
                 </p>
               </div>
