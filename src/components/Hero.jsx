@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
 
       {/* Main Container */}
-      <div className="h-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+      <div className="h-full flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
         {/* Mobile Image - shows at top on mobile */}
         <div className="w-full lg:w-1/2 flex lg:hidden justify-center order-first">
           <Image
@@ -82,7 +82,7 @@ const Hero = () => {
               join by invitation only, eliminating noise from people outside
               your private circle for a more intimate experience. We call this
                “Circle Living
-              <sup className="text-[10px] font-semibold ">TM</sup>”
+              <sup className="text-[10px] font-semibold ">TM</sup>”.
             </p>
           </div>
         </div>

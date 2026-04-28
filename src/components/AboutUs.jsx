@@ -30,18 +30,17 @@ const AboutUs = () => {
               <sup className="text-[10px] font-semibold ">TM</sup> App is a
               volunteer-powered free mobile app designed to help neighbors build
               trust and support within small, verified social groups called
-              "micro-circles". It was developed by Community Care Housing (CCH), a 501(c)(3) organization that promotes connected and shared housing opportunities, offers scholarships and grants to those in need, along with raising awareness and providing education on housing issues. 
+              "micro-circles". It was developed by Community Care Housing (CCH), a 501(c)(3) organization that promotes connected and shared housing opportunities, offers scholarships and grants to those in need, along with raising awareness and providing education on housing issues.
             </p>
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
-             CCH and NeighborConnector
-              <sup className="text-[10px] font-semibold ">TM</sup> are here to help make communities stronger, friendlier and more connected.  A part of connected and shared housing involves technology so unlike other community platforms designed for hundreds of homes or HOA communities, NeighborConnector <sup className="text-[10px] font-semibold ">TM</sup> focuses on relationships among a select few people you've met and want to build trust with (aka “Circle Living<sup className="text-[10px] font-semibold ">TM</sup>”)
-              <sup className="text-[10px] font-semibold ">TM</sup> to connect naturally.   
+              CCH and NeighborConnector
+              <sup className="text-[10px] font-semibold ">TM</sup> are here to help make communities stronger, friendlier and more connected.  A part of connected and shared housing involves technology so unlike other community platforms designed for hundreds of homes or HOA communities, NeighborConnector <sup className="text-[10px] font-semibold ">TM</sup> focuses on relationships among a select few people you've met and want to build trust with (aka “Circle Living<sup className="text-[10px] font-semibold ">TM</sup>”) to connect naturally.
             </p>
 
             <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed">
-             Whether or not you are in connected or shared housing, let’s get connected to thrive in your community.
-              The NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> Tell others about the NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> App and let’s live it up with "Circle Living
+              Whether or not you are in connected or shared housing, let’s get connected to thrive in your community.
+              Tell others about the NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> App and let’s live it up with "Circle Living
               <sup className="text-[10px] font-semibold">TM</sup>".
             </p>
           </div>

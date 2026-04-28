@@ -164,7 +164,7 @@ const Footer = () => {
                     href="/legal-disclaimer"
                     className="hover:underline hover:text-success"
                   >
-                    Legal disclaimer
+                    Legal Disclaimer
                   </Link>
                 </li>
               </ul>
@@ -235,7 +235,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-xs md:text-sm text-secondary">
             Copyright © {new Date().getFullYear()} Neighbor Connector
-            <sup className="text-[10px] font-semibold">TM</sup>. All rights reserved.
+            <sup className="text-[10px] font-semibold">TM</sup> All rights reserved.
           </p>
           <div className="text-xs md:text-sm text-secondary space-x-2 md:space-x-4 flex flex-wrap">
             <a href="/terms-and-conditions" className="hover:text-primary">
@@ -248,6 +248,10 @@ const Footer = () => {
             <span>/</span>
             <a href="/legal-disclaimer" className="hover:text-primary">
               Legal Disclaimer
+            </a>
+            <span>/</span>
+            <a href="/child-policy" className="hover:text-primary">
+              Child Safety Policy
             </a>
           </div>
         </div>

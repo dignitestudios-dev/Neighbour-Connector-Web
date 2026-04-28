@@ -36,7 +36,7 @@ const Features = () => {
                 <div className="flex items-center gap-4 mb-4">
                   <Sheild />
                   <h4 className="text-base md:text-xl font-bold text-primary">
-                    Optional Safety Check-Ins
+                    Optional Daily Check-Ins
                   </h4>
                 </div>
                 <p className="text-sm md:text-lg font-medium text-black/50 leading-7">

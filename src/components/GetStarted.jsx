@@ -12,7 +12,7 @@ const GetStarted = () => {
 
         <p className="text-white text-sm md:text-lg">
           Download the NeighborConnector<sup className="text-[10px] font-semibold">TM</sup> App and start your "Circle Living
-              <sup className="text-[10px] font-semibold">TM</sup>".
+              <sup className="text-[10px] font-semibold">TM</sup>"
           today!!
         </p>
 

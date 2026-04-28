@@ -11,7 +11,7 @@ const ResourcesPage = () => {
 
           <div className="mt-8 md:mt-10 text-center text-black/70 space-y-2">
             <p className="text-lg md:text-2xl font-semibold text-primary">
-              Neighbor Connector<sub className="text-[10px] font-semibold ml-1">TM</sub> Library
+              Neighbor Connector<sup className="text-[10px] font-semibold ml-0">TM</sup> Library
             </p>
             <p className="text-sm md:text-lg">- Videos</p>
             <p className="text-sm md:text-lg">- Presentations/Events</p>

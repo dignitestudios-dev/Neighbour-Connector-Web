@@ -11,7 +11,7 @@ const FAQ = () => {
     text.split("™").map((part, i, arr) => (
       <React.Fragment key={i}>
         {part}
-        {i < arr.length - 1 && <sup className="text-[10px] font-semibold ml-1">TM</sup>}
+        {i < arr.length - 1 && <sup className="text-[10px] font-semibold ml-0">TM</sup>}
       </React.Fragment>
     ));
 
@@ -75,9 +75,9 @@ const FAQ = () => {
             "Holly: Either with group chat or create or respond to a post for occasional help, appointments or rideshares, home help or help plan events, gatherings or activities. Just type your message or add a photo. It's as easy as texting a friend — but your chat or post stays private within your circle.",
         },
         {
-          question: 'What are "Optional Safety Check-Ins"?',
+          question: 'What are "Optional Daily Check-Ins"?',
           answer:
-            "Holly: Safety Check-Ins (optional) let you mark yourself \"Safe\" daily so neighbors know you're okay. It's great for peace of mind — especially for older adults or folks living alone. But remember, call 911 for real emergencies!",
+            "Holly: Daily Check-Ins (optional) let you mark yourself \"Safe\" daily so neighbors know you're okay. It's great for peace of mind — especially for older adults or folks living alone. But remember, call 911 for real emergencies!",
         },
         {
           question: "Can I join more than one circle?",
@@ -144,7 +144,7 @@ const FAQ = () => {
         {
           question: "How do I reach support if I get stuck?",
           answer:
-            "Holly: You can message me here for help or email Info@CommunityCareHousing.org. If it's urgent, call 720 693 2522. Someone from our team will gladly assist.",
+            "Holly: You can message me here for help or email Info@CommunityCareHousing.org. If it's urgent, call (720)-693-2522. Someone from our team will gladly assist.",
         },
         {
           question: "Can I donate or sponsor the app?",
@@ -181,7 +181,7 @@ const FAQ = () => {
 
           <p className="text-base md:text-lg font-medium text-black/50 leading-relaxed max-w-2xl mx-auto">
             Holly can help you find answers to some common questions about
-            NeighborConnector<sup className="text-[10px] font-semibold ml-1">TM</sup> and how to get started building your circle
+            NeighborConnector<sup className="text-[10px] font-semibold ml-0">TM</sup> and how to get started building your circle
             today.
           </p>
 
